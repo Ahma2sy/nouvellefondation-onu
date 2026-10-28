@@ -17,3 +17,11 @@ document.querySelectorAll("[data-copy]").forEach(function (btn) {
     else fallback();
   });
 });
+
+// Menu des langues : se ferme en cliquant ailleurs ou avec Échap.
+document.querySelectorAll(".langs-menu").forEach(function (menu) {
+  document.addEventListener("click", function (e) { if (!menu.contains(e.target)) menu.open = false; });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && menu.open) { menu.open = false; menu.querySelector("summary").focus(); }
+  });
+});
