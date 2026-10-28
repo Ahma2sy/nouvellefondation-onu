@@ -1,35 +1,55 @@
-# Publications hébergées ailleurs (PDF, articles de presse, sites partenaires).
-# Elles apparaissent dans la page Actualités, sous « Publications et documents ».
-# date : AAAA-MM-JJ
+# Publications hébergées ailleurs (PDF, presse). Apparaissent dans Actualités. date : AAAA-MM-JJ
 
-titre: { fr: Publications et documents, en: Publications and documents }
+titre:
+  fr: Publications et documents
+  en: Publications and documents
+  es: Publicaciones y documentos
 liste:
-  - date: 2026-02-06
-    titre:
-      fr: "Face au « Conseil de la paix » des États-Unis : la paix passe par une refondation de l’ONU"
-      en: "Facing the US “Board of Peace”: peace requires a refounding of the UN"
-    source: Pax Christi France
-    url: https://www.paxchristi.fr/2026/02/06/la-paix-passe-t-elle-par-la-refondation-de-l-onu/
-  - date: 2025-11-01
-    titre: { fr: "Rationaliser le fonctionnement de l’ONU : la réforme UN80", en: "Streamlining how the UN works: the UN80 reform" }
-    url: https://www.signesdestemps.me/wp-content/uploads/2025/11/Article-Rationalisation-ONU.pdf
-    pdf: true
-  - date: 2025-10-01
-    titre: { fr: "Le projet Nouvelle Fondation accueilli par Pax Christi France (lettre d’information)", en: "The New Foundation project welcomed by Pax Christi France (newsletter)" }
-    url: https://www.signesdestemps.me/wp-content/uploads/2025/11/Le-projet-Nouvelle-Fondation-accueilli-par-Pax-Christi-France-1.pdf
-    pdf: true
-  - date: 2025-09-01
-    titre: { fr: "Appel à utiliser la procédure « Uniting for Peace » pour Gaza", en: "Call to use the “Uniting for Peace” procedure for Gaza" }
-    url: https://www.signesdestemps.me/wp-content/uploads/2024/05/Article-Uniting-for-Peace.pdf
-    pdf: true
-  - date: 2025-08-18
-    titre: { fr: "Avis de la Cour internationale de justice du 23 juillet 2025, version longue", en: "ICJ advisory opinion of 23 July 2025, long version" }
-    url: https://www.signesdestemps.me/wp-content/uploads/2025/08/Article-Avis-CIJ-1.pdf
-    pdf: true
-  - date: 2025-08-18
-    titre: { fr: "Avis de la Cour internationale de justice du 23 juillet 2025, version courte", en: "ICJ advisory opinion of 23 July 2025, short version" }
-    url: https://www.signesdestemps.me/2025/08/18/avis-de-la-cours-internationale-de-justice-23-juillet-2025-par-le-groupe-nouvelle-fondation-version-courte/
-  - date: 2025-06-26
-    titre: { fr: 80e anniversaire de la Charte des Nations unies, en: 80th anniversary of the UN Charter }
-    url: https://www.signesdestemps.me/wp-content/uploads/2025/07/Article-anniversaire-Charte-ONU-26-Juin-2025.pdf
-    pdf: true
+- date: '2026-02-06'
+  titre:
+    fr: 'Face au « Conseil de la paix » des États-Unis : la paix passe par une refondation de l’ONU'
+    en: 'Facing the US “Board of Peace”: peace requires a refounding of the UN'
+    es: 'Frente al «Consejo de la Paz» de Estados Unidos: la paz pasa por una refundación de la ONU'
+  source: Pax Christi France
+  url: https://www.paxchristi.fr/2026/02/06/la-paix-passe-t-elle-par-la-refondation-de-l-onu/
+- date: '2025-11-01'
+  titre:
+    fr: 'Rationaliser le fonctionnement de l’ONU : la réforme UN80'
+    en: 'Streamlining how the UN works: the UN80 reform'
+    es: 'Racionalizar el funcionamiento de la ONU: la reforma UN80'
+  url: https://www.signesdestemps.me/wp-content/uploads/2025/11/Article-Rationalisation-ONU.pdf
+  pdf: true
+- date: '2025-10-01'
+  titre:
+    fr: Le projet Nouvelle Fondation accueilli par Pax Christi France (lettre d’information)
+    en: The New Foundation project welcomed by Pax Christi France (newsletter)
+    es: El proyecto Nueva Fundación acogido por Pax Christi Francia (boletín)
+  url: https://www.signesdestemps.me/wp-content/uploads/2025/11/Le-projet-Nouvelle-Fondation-accueilli-par-Pax-Christi-France-1.pdf
+  pdf: true
+- date: '2025-09-01'
+  titre:
+    fr: Appel à utiliser la procédure « Uniting for Peace » pour Gaza
+    en: Call to use the “Uniting for Peace” procedure for Gaza
+    es: Llamamiento a utilizar el procedimiento «Unión pro paz» para Gaza
+  url: https://www.signesdestemps.me/wp-content/uploads/2024/05/Article-Uniting-for-Peace.pdf
+  pdf: true
+- date: '2025-08-18'
+  titre:
+    fr: Avis de la Cour internationale de justice du 23 juillet 2025, version longue
+    en: ICJ advisory opinion of 23 July 2025, long version
+    es: Opinión consultiva de la Corte Internacional de Justicia del 23 de julio de 2025, versión larga
+  url: https://www.signesdestemps.me/wp-content/uploads/2025/08/Article-Avis-CIJ-1.pdf
+  pdf: true
+- date: '2025-08-18'
+  titre:
+    fr: Avis de la Cour internationale de justice du 23 juillet 2025, version courte
+    en: ICJ advisory opinion of 23 July 2025, short version
+    es: Opinión consultiva de la Corte Internacional de Justicia del 23 de julio de 2025, versión corta
+  url: https://www.signesdestemps.me/2025/08/18/avis-de-la-cours-internationale-de-justice-23-juillet-2025-par-le-groupe-nouvelle-fondation-version-courte/
+- date: '2025-06-26'
+  titre:
+    fr: 80e anniversaire de la Charte des Nations unies
+    en: 80th anniversary of the UN Charter
+    es: 80.º aniversario de la Carta de las Naciones Unidas
+  url: https://www.signesdestemps.me/wp-content/uploads/2025/07/Article-anniversaire-Charte-ONU-26-Juin-2025.pdf
+  pdf: true

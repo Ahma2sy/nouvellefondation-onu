@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="{{ site.pages.accueil.url[lang] }}">
-      <img src="/assets/img/favicon.svg" alt="" width="42" height="42">
+      <img src="/assets/img/favicon.svg" alt="" width="58" height="58">
       <span>{{ site.nomCourt | t(lang) }}</span>
     </a>
     <nav class="nav" aria-label="{{ site.ui.navigation | t(lang) }}">
@@ -10,7 +10,15 @@
       {%- endfor %}
     </nav>
     <div class="header-actions">
-      <a class="lang-toggle" href="{{ autreLangueUrl }}" hreflang="{{ autre }}" lang="{{ autre }}" aria-label="{{ site.ui.autreLangueLabel | t(lang) }}">{{ site.ui.autreLangue | t(lang) }}</a>
+      <nav class="langs" aria-label="{{ site.ui.choixLangue | t(lang) }}">
+        {%- for L in site.langs %}
+        {%- if L == lang %}
+        <span class="lang-current" aria-current="true" lang="{{ L }}">{{ L | upper }}</span>
+        {%- else %}
+        <a href="{{ site.pages[cle].url[L] }}" hreflang="{{ L }}" lang="{{ L }}" title="{{ {'fr': 'Français', 'en': 'English', 'es': 'Español'}[L] }}">{{ L | upper }}</a>
+        {%- endif %}
+        {%- endfor %}
+      </nav>
       <a class="icon-link" href="{{ site.linkedin }}" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11H3zm7 0h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4z"/></svg>
         <span class="sr-only">{{ site.ui.linkedin | t(lang) }}</span>

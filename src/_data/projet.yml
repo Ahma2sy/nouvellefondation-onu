@@ -1,68 +1,149 @@
-# Page « Le projet »
+# Page « Le projet » : histoire, Bureau, personnalités, encouragement moral, documents (fr, en, es)
 
-titre: { fr: Le projet, en: The project }
+titre:
+  fr: Le projet
+  en: The project
+  es: El proyecto
 intro:
   fr: Une coalition d’ONG et de juristes de droit international qui appelle à réformer la Charte des Nations unies.
   en: A coalition of NGOs and international lawyers calling for a reform of the UN Charter.
-
+  es: Una coalición de ONG y juristas de derecho internacional que pide reformar la Carta de las Naciones Unidas.
 paragraphes:
-  - fr: Le projet Nouvelle Fondation est né des ateliers Chemins de Paix du Centre catholique international de coopération avec l’UNESCO (CCIC), à l’initiative de Pax Christi International. Il est accueilli par Pax Christi France, qui propose de travailler un texte appelant à la réforme de la Charte de l’ONU et des institutions internationales.
-    en: The New Foundation project grew out of the Paths of Peace workshops of the International Catholic Centre for Cooperation with UNESCO (CCIC), on the initiative of Pax Christi International. It is hosted by Pax Christi France, which set out to draft a text calling for reform of the UN Charter and international institutions.
-  - fr: "Sa méthode est celle d’ICAN, la campagne internationale pour l’abolition des armes nucléaires, prix Nobel de la paix 2017 : faire circuler un texte, rassembler le plus grand nombre de signatures d’organisations, puis le porter dans les médias et auprès des cercles politiques nationaux et multilatéraux."
-    en: "Its method is that of ICAN, the International Campaign to Abolish Nuclear Weapons, winner of the 2017 Nobel Peace Prize: circulate a text, gather as many organisational signatures as possible, then take it to the media and to national and multilateral policy circles."
-  - fr: Nous soutenons la réforme UN80 du Secrétaire général et demandons que ce travail s’élargisse jusqu’à repenser l’architecture même des Nations unies. Nouvelle Fondation collabore avec le Bureau international de la paix (IPB) et fait partie de la coalition Article 109 pour la révision de la Charte.
-    en: We support the Secretary-General’s UN80 reform and call for this work to go further, to rethink the very architecture of the United Nations. New Foundation works with the International Peace Bureau (IPB) and is a member of the Article 109 coalition for a review of the Charter.
-
+- fr: Le projet Nouvelle Fondation est né des ateliers Chemins de Paix du Centre catholique international de coopération avec l’UNESCO (CCIC), à l’initiative de Pax Christi International. Il est accueilli par Pax Christi France, qui propose de travailler un texte appelant à la réforme de la Charte de l’ONU et des institutions internationales.
+  en: The New Foundation project grew out of the Paths of Peace workshops of the International Catholic Centre for Cooperation with UNESCO (CCIC), on the initiative of Pax Christi International. It is hosted by Pax Christi France, which set out to draft a text calling for reform of the UN Charter and international institutions.
+  es: El proyecto Nueva Fundación nació de los talleres Caminos de Paz del Centro Católico Internacional de Cooperación con la UNESCO (CCIC), por iniciativa de Pax Christi Internacional. Está acogido por Pax Christi Francia, que propuso elaborar un texto que llama a reformar la Carta de la ONU y las instituciones internacionales.
+- fr: 'Sa méthode est celle d’ICAN, la campagne internationale pour l’abolition des armes nucléaires, prix Nobel de la paix 2017 : faire circuler un texte, rassembler le plus grand nombre de signatures d’organisations, puis le porter dans les médias et auprès des cercles politiques nationaux et multilatéraux.'
+  en: 'Its method is that of ICAN, the International Campaign to Abolish Nuclear Weapons, winner of the 2017 Nobel Peace Prize: circulate a text, gather as many organisational signatures as possible, then take it to the media and to national and multilateral policy circles.'
+  es: 'Su método es el de ICAN, la Campaña Internacional para Abolir las Armas Nucleares, premio Nobel de la Paz 2017: hacer circular un texto, reunir el mayor número posible de firmas de organizaciones y luego llevarlo a los medios y a los círculos políticos nacionales y multilaterales.'
+- fr: Nous soutenons la réforme UN80 du Secrétaire général et demandons que ce travail s’élargisse jusqu’à repenser l’architecture même des Nations unies. Nouvelle Fondation collabore avec le Bureau international de la paix (IPB) et fait partie de la coalition Article 109 pour la révision de la Charte.
+  en: We support the Secretary-General’s UN80 reform and call for this work to go further, to rethink the very architecture of the United Nations. New Foundation works with the International Peace Bureau (IPB) and is a member of the Article 109 coalition for a review of the Charter.
+  es: Apoyamos la reforma UN80 del Secretario General y pedimos que este trabajo se amplíe hasta repensar la arquitectura misma de las Naciones Unidas. Nueva Fundación colabora con la Oficina Internacional de la Paz (IPB) y forma parte de la coalición Article 109 por la revisión de la Carta.
 photo:
   image: /assets/img/reunion-octobre-2024.jpg
   alt:
     fr: Cinq membres du projet debout dans une salle de réunion au siège de Pax Christi France
     en: Five project members standing in a meeting room at Pax Christi France headquarters
+    es: Cinco miembros del proyecto de pie en una sala de reuniones en la sede de Pax Christi Francia
   legende:
-    fr: "Lancement du projet en octobre 2024, au siège de Pax Christi France. De gauche à droite : Marc Deluzet (MIAMSI), Michel Kahla (PCI), Vlatko Maric (Pax Christi France), Ghislain Le Ray (Pax Christi International), Alain Rouy (Mouvement de la Paix, IPB). À distance : Farah Sakr et Marilyn Pacouret. Photo : Yann Henry."
-    en: "Project launch in October 2024 at Pax Christi France headquarters. From left: Marc Deluzet (MIAMSI), Michel Kahla (PCI), Vlatko Maric (Pax Christi France), Ghislain Le Ray (Pax Christi International), Alain Rouy (Mouvement de la Paix, IPB). Online: Farah Sakr and Marilyn Pacouret. Photo: Yann Henry."
-
-bureauTitre: { fr: Le Bureau, en: The Board }
+    fr: 'Lancement du projet en octobre 2024, au siège de Pax Christi France. De gauche à droite : Marc Deluzet (MIAMSI), Michel Kahla (PCI), Vlatko Maric (Pax Christi France), Ghislain Le Ray (Pax Christi International), Alain Rouy (Mouvement de la Paix, IPB). À distance : Farah Sakr et Marilyn Pacouret. Photo : Yann Henry.'
+    en: 'Project launch in October 2024 at Pax Christi France headquarters. From left: Marc Deluzet (MIAMSI), Michel Kahla (PCI), Vlatko Maric (Pax Christi France), Ghislain Le Ray (Pax Christi International), Alain Rouy (Mouvement de la Paix, IPB). Online: Farah Sakr and Marilyn Pacouret. Photo: Yann Henry.'
+    es: 'Lanzamiento del proyecto en octubre de 2024, en la sede de Pax Christi Francia. De izquierda a derecha: Marc Deluzet (MIAMSI), Michel Kahla (PCI), Vlatko Maric (Pax Christi Francia), Ghislain Le Ray (Pax Christi Internacional), Alain Rouy (Mouvement de la Paix, IPB). A distancia: Farah Sakr y Marilyn Pacouret. Foto: Yann Henry.'
+bureauTitre:
+  fr: Le Bureau
+  en: The Board
+  es: La Mesa
 bureau:
-  - nom: Ghislain Le Ray
-    role: { fr: Président de la commission Nouvelle Fondation, en: Chair of the New Foundation commission }
-  - nom: Alfonso Zardi
-    role: { fr: Représentant de Pax Christi International au Conseil de l’Europe, en: Pax Christi International representative to the Council of Europe }
-  - nom: Hervé Dory
-    role: { fr: Vice-président de Pax Christi France, en: "Vice-President, Pax Christi France" }
-  - nom: Vlatko Maric
-    role: { fr: Pax Christi France, en: Pax Christi France }
-  - nom: Marilyn Pacouret
-    role: { fr: Présidente de Chrétiens de la Méditerranée, en: "President, Chrétiens de la Méditerranée" }
-  - nom: Alain Rouy
-    role: { fr: "Secrétaire national du Mouvement de la Paix, vice-président du Bureau international de la paix", en: "National Secretary, Mouvement de la Paix; Vice-President, International Peace Bureau" }
-  - nom: Marc Deluzet
-    role: { fr: Président du MIAMSI, en: "President, MIAMSI" }
-  - nom: Didier Coulomb
-    role: { fr: Membre du Bureau, en: Board member }
-  - nom: Farah Sakr
-    role: { fr: "Consultante, chargée d’enseignement en droit international", en: Consultant and lecturer in international law }
-
-personnalitesTitre: { fr: Personnalités qui soutiennent le projet, en: Public figures supporting the project }
+- nom: Ghislain Le Ray
+  role:
+    fr: Président de la commission Nouvelle Fondation
+    en: Chair of the New Foundation commission
+    es: Presidente de la comisión Nueva Fundación
+- nom: Hervé Dory
+  role:
+    fr: Vice-président de Pax Christi France
+    en: Vice-President, Pax Christi France
+    es: Vicepresidente de Pax Christi Francia
+- nom: Alfonso Zardi
+  role:
+    fr: Président de Chrétiens de la Méditerranée, représentant de Pax Christi International au Conseil de l’Europe
+    en: President of Chrétiens de la Méditerranée, Pax Christi International representative to the Council of Europe
+    es: Presidente de Chrétiens de la Méditerranée, representante de Pax Christi Internacional ante el Consejo de Europa
+- nom: Vlatko Maric
+  role:
+    fr: Pax Christi France
+    en: Pax Christi France
+    es: Pax Christi Francia
+- nom: Marilyn Pacouret
+  role:
+    fr: Membre du Conseil national de Pax Christi France
+    en: Member of the National Council of Pax Christi France
+    es: Miembro del Consejo Nacional de Pax Christi Francia
+- nom: Alain Rouy
+  role:
+    fr: Secrétaire national du Mouvement de la Paix, vice-président du Bureau international de la paix
+    en: National Secretary, Mouvement de la Paix; Vice-President, International Peace Bureau
+    es: Secretario nacional del Mouvement de la Paix, vicepresidente de la Oficina Internacional de la Paz
+- nom: Marc Deluzet
+  role:
+    fr: Président du MIAMSI, membre du CCIC/UNESCO
+    en: President of MIAMSI, member of CCIC/UNESCO
+    es: Presidente del MIAMSI, miembro del CCIC/UNESCO
+- nom: Didier Coulomb
+  role:
+    fr: Membre du CCIC/UNESCO
+    en: Member of CCIC/UNESCO
+    es: Miembro del CCIC/UNESCO
+- nom: Farah Sakr
+  role:
+    fr: Consultante, chargée d’enseignement en droit international
+    en: Consultant and lecturer in international law
+    es: Consultora y profesora de derecho internacional
+personnalitesTitre:
+  fr: Personnalités qui soutiennent le projet
+  en: Public figures supporting the project
+  es: Personalidades que apoyan el proyecto
 personnalites:
-  - nom: Ghislain Poissonnier
-    role: { fr: "Vice-président de JURDI, Juristes pour le respect du droit international", en: "Vice-President, JURDI (Lawyers for respect of international law)" }
-  - nom: Dominique Potier
-    role: { fr: "Député, président d’Esprit Civique", en: "Member of the French National Assembly, President of Esprit Civique" }
-  - nom: Marco Tarquinio
-    role: { fr: Député européen, en: Member of the European Parliament }
-
-documentsTitre: { fr: Documents de référence, en: Key documents }
+- nom: Ghislain Poissonnier
+  role:
+    fr: Vice-président de JURDI, Juristes pour le respect du droit international
+    en: Vice-President, JURDI (Lawyers for respect of international law)
+    es: Vicepresidente de JURDI (Juristas por el respeto del derecho internacional)
+- nom: Dominique Potier
+  role:
+    fr: Député, président d’Esprit Civique
+    en: Member of the French National Assembly, President of Esprit Civique
+    es: Diputado francés, presidente de Esprit Civique
+- nom: Marco Tarquinio
+  role:
+    fr: Député européen
+    en: Member of the European Parliament
+    es: Diputado europeo
+documentsTitre:
+  fr: Documents de référence
+  en: Key documents
+  es: Documentos de referencia
 documents:
-  - titre: { fr: Texte du projet Nouvelle Fondation, en: New Foundation project text }
-    url: https://www.signesdestemps.me/wp-content/uploads/2024/05/Texte-New-Foundation-version-5.pdf
-    pdf: true
-  - titre: { fr: "Présentation du projet à Florence, 80e anniversaire de Pax Christi", en: "Project presentation in Florence, Pax Christi 80th anniversary" }
-    url: https://www.signesdestemps.me/wp-content/uploads/2025/11/New-Foundation-Presentation.pdf
-    pdf: true
-  - titre: { fr: Le projet présenté à l’UNESCO, en: The project at UNESCO }
-    url: https://paxchristi.net/icngo-2024-unesco/
-  - titre: { fr: "Refonder les institutions internationales, sur le site du CCIC", en: "Refounding international institutions, on the CCIC website" }
-    url: https://ccic-unesco.org/refonder-les-institutions-internationales/
-  - titre: { fr: Rejoindre l’initiative sur le site de Pax Christi International, en: Join the initiative on Pax Christi International’s website }
-    url: https://paxchristi.net/join-the-initiative-new-foundation-of-international-institutions/
+- titre:
+    fr: Texte du projet Nouvelle Fondation
+    en: New Foundation project text
+    es: Texto del proyecto Nueva Fundación
+  url: https://www.signesdestemps.me/wp-content/uploads/2024/05/Texte-New-Foundation-version-5.pdf
+  pdf: true
+- titre:
+    fr: Présentation du projet à Florence, 80e anniversaire de Pax Christi
+    en: Project presentation in Florence, Pax Christi 80th anniversary
+    es: Presentación del proyecto en Florencia, 80.º aniversario de Pax Christi
+  url: https://www.signesdestemps.me/wp-content/uploads/2025/11/New-Foundation-Presentation.pdf
+  pdf: true
+- titre:
+    fr: Le projet présenté à l’UNESCO
+    en: The project at UNESCO
+    es: El proyecto presentado en la UNESCO
+  url: https://paxchristi.net/icngo-2024-unesco/
+- titre:
+    fr: Refonder les institutions internationales, sur le site du CCIC
+    en: Refounding international institutions, on the CCIC website
+    es: Refundar las instituciones internacionales, en el sitio del CCIC
+  url: https://ccic-unesco.org/refonder-les-institutions-internationales/
+- titre:
+    fr: Rejoindre l’initiative sur le site de Pax Christi International
+    en: Join the initiative on Pax Christi International’s website
+    es: Unirse a la iniciativa en el sitio de Pax Christi Internacional
+  url: https://paxchristi.net/join-the-initiative-new-foundation-of-international-institutions/
+encouragement:
+  titre:
+    fr: Encouragement moral au projet
+    en: Moral encouragement for the project
+    es: Aliento moral al proyecto
+  nom:
+    fr: Sa Sainteté le Dalaï-lama
+    en: His Holiness the Dalai Lama
+    es: Su Santidad el Dalái Lama
+  role:
+    fr: Prix Nobel de la paix
+    en: Nobel Peace Prize laureate
+    es: Premio Nobel de la Paz
+logoAlt:
+  fr: Logo du projet Nouvelle Fondation des institutions internationales
+  en: Logo of the New Foundation of International Institutions project
+  es: Logotipo del proyecto Nueva Fundación de las Instituciones Internacionales

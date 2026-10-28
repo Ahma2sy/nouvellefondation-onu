@@ -9,15 +9,14 @@ export default {
   schema: "article",
   hreflangAbsent: true,
   eleventyComputed: {
-    lang: (data) => (data.lang === "en" ? "en" : "fr"),
+    lang: (data) => (["en", "es"].includes(data.lang) ? data.lang : "fr"),
     permalink: (data) => {
       if (data.brouillon) return false;
-      const base = data.lang === "en" ? "/en/news/" : "/actualites/";
+      const base = { en: "/en/news/", es: "/es/noticias/" }[data.lang] || "/actualites/";
       return base + data.page.fileSlug.replace(/^\d{4}-\d{2}-\d{2}-/, "") + "/";
     },
     titreSeo: (data) => data.titre,
     descriptionSeo: (data) => data.resume,
-    imageSeo: (data) => data.image || "/assets/img/partage.jpg",
-    autreLangueUrl: (data) => data.site.pages.actualites.url[data.lang === "fr" ? "en" : "fr"]
+    imageSeo: (data) => data.image || "/assets/img/partage.jpg"
   }
 };

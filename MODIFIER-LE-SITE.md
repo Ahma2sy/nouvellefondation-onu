@@ -17,7 +17,7 @@ Trois façons, de la plus simple à la plus technique. Après chaque modificatio
 5. Pour préparer un article sans le publier : cocher *Brouillon*.
 
 **Ajouter un partenaire, un signataire, un membre du Bureau, une publication PDF :**
-Menu *Contenu des pages*, puis choisir la page. Chaque texte a une case *fr* et une case *en*.
+Menu *Contenu des pages*, puis choisir la page. Chaque texte a une case *fr*, une case *en* et une case *es* (espagnol). Si une case reste vide, le texte français s'affiche à la place.
 Pour ajouter un élément à une liste, cliquer sur *Add an entry* au bas de la liste.
 
 **Ajouter une image ou un PDF :** menu *Media*, puis *Upload*.

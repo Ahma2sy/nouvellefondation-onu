@@ -17,6 +17,9 @@ permalink: "{{ site.pages.projet.url[lang] }}"
     <figure class="projet-photo">
       <img src="{{ P.photo.image }}" alt="{{ P.photo.alt | t(lang) }}" width="1400" height="927" loading="lazy">
       <figcaption>{{ P.photo.legende | t(lang) }}</figcaption>
+      <div class="logo-projet">
+        <img src="/assets/logos/logo-couleur-texte-vertical.svg" alt="{{ P.logoAlt | t(lang) }}" width="560" height="400" loading="lazy">
+      </div>
     </figure>
   </div>
 </section>
@@ -37,6 +40,12 @@ permalink: "{{ site.pages.projet.url[lang] }}"
         <li><strong>{{ m.nom }}</strong><span>{{ m.role | t(lang) }}</span></li>
         {%- endfor %}
       </ul>
+      {%- if P.encouragement %}
+      <div class="encouragement">
+        <h2>{{ P.encouragement.titre | t(lang) }}</h2>
+        <p><strong>{{ P.encouragement.nom | t(lang) }}</strong><span>{{ P.encouragement.role | t(lang) }}</span></p>
+      </div>
+      {%- endif %}
       <h2 class="spaced">{{ P.documentsTitre | t(lang) }}</h2>
       <ul class="doc-list">
         {%- for d in P.documents %}

@@ -1,6 +1,6 @@
 # Site du projet Nouvelle Fondation des institutions internationales
 
-Site bilingue (français / anglais) avec blog.
+Site trilingue (français, anglais, espagnol) avec blog.
 
 - **Modifier le site** : voir `MODIFIER-LE-SITE.md`
 - **Mettre en ligne et être trouvé sur Google** : voir `MISE-EN-LIGNE.md`
@@ -8,4 +8,4 @@ Site bilingue (français / anglais) avec blog.
 - **Règles pour l'IA et les développeurs** : voir `CLAUDE.md`
 
 Pages : Accueil, Propositions, Le projet, Actualités (blog), Partenaires, Agir.
-Chaque page existe en français (`/`) et en anglais (`/en/`).
+Chaque page existe en français (`/`), en anglais (`/en/`) et en espagnol (`/es/`).

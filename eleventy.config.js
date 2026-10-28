@@ -22,7 +22,8 @@ export default function (eleventyConfig) {
   // {{ date | dateLongue(lang) }} : « 31 août 2026 » / « 31 August 2026 »
   eleventyConfig.addFilter("dateLongue", (value, lang) => {
     const d = value instanceof Date ? value : new Date(value);
-    return d.toLocaleDateString(lang === "en" ? "en-GB" : "fr-FR", {
+    const locale = { fr: "fr-FR", en: "en-GB", es: "es-ES" }[lang] || "fr-FR";
+    return d.toLocaleDateString(locale, {
       day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Paris"
     });
   });

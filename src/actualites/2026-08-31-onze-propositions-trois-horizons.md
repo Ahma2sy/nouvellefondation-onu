@@ -8,7 +8,7 @@ Un catalogue de propositions ne dit rien de leur faisabilité. Nous avons donc c
 
 Certaines s’appuient sur des institutions déjà en place et ne demandent aucune révision de la Charte. D’autres se heurtent à des intérêts d’États sans être juridiquement bloquées. Les dernières supposent d’amender la Charte, ce qui requiert une majorité des deux tiers à l’Assemblée générale et l’accord des cinq membres permanents du Conseil de sécurité.
 
-## Premier temps : ce qui est réalisable dès maintenant
+## Premiers temps : ce qui est réalisable dès maintenant
 
 **Proposition 1** : rehausser le statut des ONG et pérenniser les Forums mondiaux. Ces deux mesures s’appuient sur des pratiques établies, du Comité de liaison ONG-UNESCO à l’ECOSOC, jusqu’à la Conférence de Nairobi de 2024. Aucune révision de la Charte n’est nécessaire.
 
@@ -20,7 +20,7 @@ Certaines s’appuient sur des institutions déjà en place et ne demandent aucu
 
 **Proposition 5** : promouvoir la sécurité humaine au sens du PNUD de 1994, par des normes commerciales sociales et environnementales contraignantes, en mobilisant les institutions existantes : ECOSOC, OIT, OMC, PNUE.
 
-## Deuxième temps : réalisable en droit, difficile en politique
+## Seconds temps : réalisable en droit, difficile en politique
 
 **Proposition 6** : renforcer le recours aux casques bleus et privilégier la voie diplomatique. La Charte n’est pas en cause, le contexte politique l’est.
 
@@ -28,7 +28,7 @@ Certaines s’appuient sur des institutions déjà en place et ne demandent aucu
 
 **Proposition 8** : fonder une institution mondiale permanente pour l’environnement et le climat, inspirée des COP mais dotée de moyens contraignants. Peu d’obstacles politiques frontaux, mais une création ex nihilo reste ambitieuse.
 
-## Troisième temps : nos propositions phares
+## Troisièmes temps : nos propositions phares
 
 **Proposition 9** : renforcer les rôles du Secrétaire général et de l’Assemblée générale, en permettant au premier de faire adopter par la seconde, à la majorité des deux tiers, une résolution surmontant un blocage du Conseil de sécurité sur des questions relevant du Chapitre VII. La résolution Uniting for Peace ouvre une voie, mais la mesure suppose une réforme de la Charte.
 

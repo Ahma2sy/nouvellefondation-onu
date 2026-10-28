@@ -1,39 +1,72 @@
-# Textes de la page d'accueil
+# Textes de la page d'accueil (fr, en, es)
 
 hero:
   titre:
     fr: Refonder l’ONU pour répondre aux défis de notre temps
     en: Refounding the UN to meet the challenges of our time
+    es: Refundar la ONU para responder a los desafíos de nuestro tiempo
   texte:
     fr: Une coalition d’associations et d’ONG porte onze propositions pour un système international plus juste, plus représentatif et capable d’agir.
     en: A coalition of associations and NGOs is putting forward eleven proposals for a fairer, more representative international system that is able to act.
-  bouton1: { fr: Découvrir les 11 propositions, en: See the 11 proposals }
-  bouton2: { fr: Signer la pétition, en: Sign the petition }
-
+    es: Una coalición de asociaciones y ONG presenta once propuestas para un sistema internacional más justo, más representativo y capaz de actuar.
+  bouton1:
+    fr: Découvrir les 11 propositions
+    en: See the 11 proposals
+    es: Descubrir las 11 propuestas
+  bouton2:
+    fr: Signer la pétition
+    en: Sign the petition
+    es: Firmar la petición
 constat:
-  titre: { fr: Pourquoi refonder plutôt qu’abandonner, en: Why refound rather than abandon }
+  titre:
+    fr: Pourquoi refonder plutôt qu’abandonner
+    en: Why refound rather than abandon
+    es: Por qué refundar en lugar de abandonar
   texte:
-    fr: "L’ONU a été fondée en 1945 par cinquante États. Ils sont aujourd’hui cent quatre-vingt-treize. Les menaces ont changé, les rapports de force aussi, mais l’architecture n’a pas bougé : un blocage au Conseil de sécurité suffit à paralyser l’Organisation. Face à ce constat, nous refusons à la fois l’abandon et le statu quo."
-    en: "The UN was founded in 1945 by fifty states. Today there are one hundred and ninety-three. Threats have changed, and so has the balance of power, but the architecture has not: a single deadlock in the Security Council is enough to paralyse the Organisation. We reject both walking away and the status quo."
-  lien: { fr: Découvrir le projet, en: About the project }
-
+    fr: 'L’ONU a été fondée en 1945 par cinquante États. Ils sont aujourd’hui cent quatre-vingt-treize. Les menaces ont changé, les rapports de force aussi, mais l’architecture n’a pas bougé : un blocage au Conseil de sécurité suffit à paralyser l’Organisation. Face à ce constat, nous refusons à la fois l’abandon et le statu quo.'
+    en: 'The UN was founded in 1945 by fifty states. Today there are one hundred and ninety-three. Threats have changed, and so has the balance of power, but the architecture has not: a single deadlock in the Security Council is enough to paralyse the Organisation. We reject both walking away and the status quo.'
+    es: 'La ONU fue fundada en 1945 por cincuenta Estados. Hoy son ciento noventa y tres. Las amenazas han cambiado, la correlación de fuerzas también, pero la arquitectura no se ha movido: un bloqueo en el Consejo de Seguridad basta para paralizar la Organización. Ante esta constatación, rechazamos tanto el abandono como el statu quo.'
+  lien:
+    fr: Découvrir le projet
+    en: About the project
+    es: Descubrir el proyecto
 frise:
-  titre: { fr: "Onze propositions, trois temps", en: "Eleven proposals, three stages" }
+  titre:
+    fr: Onze propositions, trois temps
+    en: Eleven proposals, three stages
+    es: Once propuestas, tres tiempos
   texte:
     fr: Nos propositions sont classées selon ce qu’elles exigent du droit existant, des mesures possibles dès maintenant à la révision de la Charte.
     en: Our proposals are ordered by what they require of existing law, from measures possible today to a review of the Charter.
-  lien: { fr: Voir le tableau complet, en: See the full table }
-
+    es: Nuestras propuestas están ordenadas según lo que exigen del derecho vigente, desde las medidas posibles hoy hasta la revisión de la Carta.
+  lien:
+    fr: Voir le tableau complet
+    en: See the full table
+    es: Ver la tabla completa
 actus:
-  titre: { fr: Dernières actualités, en: Latest news }
-
+  titre:
+    fr: Dernières actualités
+    en: Latest news
+    es: Últimas noticias
 partenaires:
-  titre: { fr: Ils portent le projet, en: The organisations behind the project }
-  lien: { fr: Voir tous les partenaires, en: See all partners }
-
+  titre:
+    fr: Ils portent le projet
+    en: The organisations behind the project
+    es: Las organizaciones que impulsan el proyecto
+  lien:
+    fr: Voir tous les partenaires
+    en: See all partners
+    es: Ver todos los socios
 appel:
-  titre: { fr: Soutenir les propositions, en: Support the proposals }
+  titre:
+    fr: Soutenir les propositions
+    en: Support the proposals
+    es: Apoyar las propuestas
   texte:
     fr: Signer prend une minute. Une signature d’organisation pèse encore davantage.
     en: Signing takes one minute. A signature from an organisation carries even more weight.
-  bouton: { fr: Comment agir, en: How to take action }
+    es: Firmar lleva un minuto. La firma de una organización tiene aún más peso.
+  bouton:
+    fr: Comment agir
+    en: How to take action
+    es: Cómo actuar

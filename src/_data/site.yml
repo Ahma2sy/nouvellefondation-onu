@@ -1,103 +1,202 @@
-# Réglages généraux du site.
-# Chaque texte existe en deux langues : fr (français) et en (anglais).
+# Réglages généraux du site. Chaque texte existe en trois langues : fr, en, es.
+# url : adresse définitive du site, sans barre finale (ex. https://www.nouvellefondation-onu.org).
+# À remplir dès que le nom de domaine est branché : active le plan du site et les balises Google.
 
-# Adresse définitive du site, sans barre finale (ex. https://www.nouvelle-fondation.org).
-# À remplir dès que le nom de domaine est branché : active le sitemap et les balises Google.
-url: ""
-
+url: ''
 nom:
   fr: Nouvelle Fondation des institutions internationales
   en: New Foundation of International Institutions
+  es: Nueva Fundación de las Instituciones Internacionales
 nomCourt:
-  fr: Nouvelle Fondation
-  en: New Foundation
-
+  fr: Projet Nouvelle Fondation
+  en: New Foundation Project
+  es: Proyecto Nueva Fundación
 linkedin: https://www.linkedin.com/company/146203136/
 email: ghislainleray.paxchristi@gmail.com
 pageHistorique: https://www.signesdestemps.me/2024/05/01/projet-nouvelle-fondation-des-institutions-internationales/
-
-langs: [fr, en]
-
-# Les pages du site : adresse, titre de menu, titre et description pour Google.
+langs:
+- fr
+- en
+- es
 pages:
   accueil:
-    url: { fr: /, en: /en/ }
-    menu: { fr: Accueil, en: Home }
+    url:
+      fr: /
+      en: /en/
+      es: /es/
+    menu:
+      fr: Accueil
+      en: Home
+      es: Inicio
     titre:
-      fr: "Nouvelle Fondation : 11 propositions pour réformer l’ONU"
-      en: "New Foundation: 11 proposals to reform the United Nations"
+      fr: 'Projet Nouvelle Fondation : 11 propositions pour réformer l’ONU'
+      en: 'New Foundation Project: 11 proposals to reform the UN'
+      es: 'Proyecto Nueva Fundación: 11 propuestas para reformar la ONU'
     description:
       fr: Réforme de l’ONU, du Conseil de sécurité et du droit de veto, société civile, climat. Onze propositions portées par une coalition d’associations et d’ONG.
       en: UN and Security Council reform, the veto, civil society, climate. Eleven proposals from a coalition of associations around Pax Christi France.
+      es: Reforma de la ONU, del Consejo de Seguridad y del derecho de veto, sociedad civil, clima. Once propuestas de una coalición de asociaciones y ONG.
   propositions:
-    url: { fr: /propositions/, en: /en/proposals/ }
-    menu: { fr: Propositions, en: Proposals }
+    url:
+      fr: /propositions/
+      en: /en/proposals/
+      es: /es/propuestas/
+    menu:
+      fr: Propositions
+      en: Proposals
+      es: Propuestas
     titre:
-      fr: "Réforme de l’ONU et du Conseil de sécurité : 11 propositions"
-      en: "UN and Security Council reform: our 11 proposals"
+      fr: 'Réforme de l’ONU et du Conseil de sécurité : 11 propositions'
+      en: 'UN and Security Council reform: our 11 proposals'
+      es: 'Reforma de la ONU y del Consejo de Seguridad: 11 propuestas'
     description:
       fr: Suspension du droit de veto, Conseil de sécurité représentatif, rôle de l’Assemblée générale, ONG, IA, climat. Nos onze propositions classées en trois temps.
       en: Suspending the veto, a representative Security Council, a stronger General Assembly, NGOs, AI, climate. Our eleven proposals in three stages.
+      es: Suspender el veto, un Consejo de Seguridad representativo, una Asamblea General más fuerte, ONG, IA, clima. Nuestras once propuestas en tres tiempos.
   projet:
-    url: { fr: /le-projet/, en: /en/the-project/ }
-    menu: { fr: Le projet, en: The project }
+    url:
+      fr: /le-projet/
+      en: /en/the-project/
+      es: /es/el-proyecto/
+    menu:
+      fr: Le projet
+      en: The project
+      es: El proyecto
     titre:
-      fr: "Le projet Nouvelle Fondation des institutions internationales"
-      en: "The New Foundation of International Institutions project"
+      fr: Le projet Nouvelle Fondation des institutions internationales
+      en: The New Foundation of International Institutions project
+      es: El proyecto Nueva Fundación de las Instituciones Internacionales
     description:
       fr: Né à l’initiative de Pax Christi, le projet réunit associations, ONG et juristes autour d’un appel à réformer la Charte des Nations unies.
       en: Launched by Pax Christi, the project brings together associations, NGOs and international lawyers calling for a reform of the UN Charter.
+      es: Nacido por iniciativa de Pax Christi, el proyecto reúne asociaciones, ONG y juristas en torno a un llamamiento a reformar la Carta de las Naciones Unidas.
   actualites:
-    url: { fr: /actualites/, en: /en/news/ }
-    menu: { fr: Actualités, en: News }
+    url:
+      fr: /actualites/
+      en: /en/news/
+      es: /es/noticias/
+    menu:
+      fr: Actualités
+      en: News
+      es: Noticias
     titre:
-      fr: "Actualités et analyses sur la réforme de l’ONU | Nouvelle Fondation"
-      en: "News and analysis on UN reform | New Foundation"
+      fr: Actualités et analyses sur la réforme de l’ONU | Nouvelle Fondation
+      en: News and analysis on UN reform | New Foundation
+      es: Noticias y análisis sobre la reforma de la ONU | Nueva Fundación
     description:
       fr: Nos articles, prises de position et analyses juridiques sur la réforme des Nations unies et du droit international.
       en: Our articles, positions and legal analyses on reforming the United Nations and international law.
+      es: Nuestros artículos, posicionamientos y análisis jurídicos sobre la reforma de las Naciones Unidas y el derecho internacional.
   partenaires:
-    url: { fr: /partenaires/, en: /en/partners/ }
-    menu: { fr: Partenaires, en: Partners }
+    url:
+      fr: /partenaires/
+      en: /en/partners/
+      es: /es/socios/
+    menu:
+      fr: Partenaires
+      en: Partners
+      es: Socios
     titre:
-      fr: "Partenaires et signataires | Nouvelle Fondation"
-      en: "Partners and supporters | New Foundation"
+      fr: Partenaires et signataires | Nouvelle Fondation
+      en: Partners and supporters | New Foundation
+      es: Socios y firmantes | Nueva Fundación
     description:
       fr: Article 109, Bureau international de la paix, Pax Christi et les associations qui soutiennent les propositions de Nouvelle Fondation.
       en: Article 109, the International Peace Bureau, Pax Christi and the associations supporting the New Foundation proposals.
+      es: Article 109, la Oficina Internacional de la Paz, Pax Christi y las asociaciones que apoyan las propuestas de Nueva Fundación.
   agir:
-    url: { fr: /agir/, en: /en/take-action/ }
-    menu: { fr: Agir, en: Take action }
+    url:
+      fr: /agir/
+      en: /en/take-action/
+      es: /es/actuar/
+    menu:
+      fr: Agir
+      en: Take action
+      es: Actuar
     titre:
-      fr: "Signer la pétition pour la réforme de l’ONU | Nouvelle Fondation"
-      en: "Sign the petition for UN reform | New Foundation"
+      fr: Signer la pétition pour la réforme de l’ONU | Nouvelle Fondation
+      en: Sign the petition for UN reform | New Foundation
+      es: Firmar la petición por la reforma de la ONU | Nueva Fundación
     description:
       fr: Signez la pétition pour la réforme de l’ONU, à titre individuel ou au nom de votre organisation, et rejoignez le groupe de travail.
       en: Sign the petition for UN reform, as an individual or on behalf of your organisation, and join the working group.
-
-# Ordre du menu principal
-menu: [propositions, projet, actualites, partenaires, agir]
-
-# Petits textes de l’interface
+      es: Firme la petición por la reforma de la ONU, a título individual o en nombre de su organización, y únase al grupo de trabajo.
+menu:
+- propositions
+- projet
+- actualites
+- partenaires
+- agir
 ui:
-  aller: { fr: Aller au contenu, en: Skip to content }
-  menu: { fr: Menu, en: Menu }
-  navigation: { fr: Navigation principale, en: Main navigation }
-  autreLangue: { fr: English, en: Français }
-  autreLangueLabel: { fr: Read this site in English, en: Lire le site en français }
-  linkedin: { fr: Suivre sur LinkedIn, en: Follow on LinkedIn }
-  lireSuite: { fr: Lire l’article, en: Read the article }
-  toutesActus: { fr: Toutes les actualités, en: All news }
-  retourActus: { fr: Retour aux actualités, en: Back to news }
-  publieLe: { fr: Publié le, en: Published on }
-  surLinkedin: { fr: Voir la publication sur LinkedIn, en: See the post on LinkedIn }
-  enFrancais: { fr: "", en: in French }
-  pdf: { fr: PDF, en: PDF }
-  contact: { fr: Contact, en: Contact }
-  copier: { fr: Copier l’adresse, en: Copy address }
-  copie: { fr: Adresse copiée, en: Address copied }
-  historique: { fr: Ancienne page du projet, en: Original project page }
+  aller:
+    fr: Aller au contenu
+    en: Skip to content
+    es: Ir al contenido
+  menu:
+    fr: Menu
+    en: Menu
+    es: Menú
+  navigation:
+    fr: Navigation principale
+    en: Main navigation
+    es: Navegación principal
+  linkedin:
+    fr: Suivre sur LinkedIn
+    en: Follow on LinkedIn
+    es: Seguir en LinkedIn
+  lireSuite:
+    fr: Lire l’article
+    en: Read the article
+    es: Leer el artículo
+  toutesActus:
+    fr: Toutes les actualités
+    en: All news
+    es: Todas las noticias
+  retourActus:
+    fr: Retour aux actualités
+    en: Back to news
+    es: Volver a las noticias
+  publieLe:
+    fr: Publié le
+    en: Published on
+    es: Publicado el
+  surLinkedin:
+    fr: Voir la publication sur LinkedIn
+    en: See the post on LinkedIn
+    es: Ver la publicación en LinkedIn
+  enFrancais:
+    fr: ''
+    en: in French
+    es: en francés
+  pdf:
+    fr: PDF
+    en: PDF
+    es: PDF
+  contact:
+    fr: Contact
+    en: Contact
+    es: Contacto
+  copier:
+    fr: Copier l’adresse
+    en: Copy address
+    es: Copiar la dirección
+  copie:
+    fr: Adresse copiée
+    en: Address copied
+    es: Dirección copiada
+  historique:
+    fr: Ancienne page du projet
+    en: Original project page
+    es: Página original del proyecto
   piedDePage:
     fr: Projet Nouvelle Fondation des institutions internationales, porté par Pax Christi France.
     en: New Foundation of International Institutions project, hosted by Pax Christi France.
-  creditPhoto: { fr: "Le Palais des Nations, Genève", en: "The Palais des Nations, Geneva" }
+    es: Proyecto Nueva Fundación de las Instituciones Internacionales, acogido por Pax Christi Francia.
+  creditPhoto:
+    fr: Le Palais des Nations, Genève
+    en: The Palais des Nations, Geneva
+    es: El Palacio de las Naciones, Ginebra
+  choixLangue:
+    fr: Choisir la langue
+    en: Choose language
+    es: Elegir idioma

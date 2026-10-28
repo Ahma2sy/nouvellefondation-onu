@@ -73,23 +73,26 @@ p { margin: 0; }
 /* En-tête */
 .site-header { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--rule); }
 .header-inner { display: flex; align-items: center; gap: 1.5rem; padding-block: .6rem; }
-.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-family: var(--font-display); font-size: 1.2rem; font-weight: 600; white-space: nowrap; }
-.brand img { width: 42px; height: 42px; }
+.brand { display: flex; align-items: center; gap: .75rem; text-decoration: none; font-family: var(--font-display); font-size: 1.6rem; font-weight: 600; white-space: nowrap; letter-spacing: -0.005em; }
+.brand img { width: 58px; height: 58px; }
 .nav { display: flex; gap: 1.25rem; margin-left: auto; font-size: .95rem; font-weight: 600; }
 .nav a { text-decoration: none; color: var(--ink-soft); padding-block: .25rem; border-bottom: 2px solid transparent; }
 .nav a:hover { color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--olive); }
 .header-actions { display: flex; align-items: center; gap: .6rem; }
-.lang-toggle { text-decoration: none; font-size: var(--step--1); font-weight: 600; color: var(--ink); border: 1px solid var(--rule); border-radius: 999px; padding: .3rem .85rem; }
-.lang-toggle:hover { border-color: var(--ink); color: var(--ink); }
+.langs { display: flex; border: 1px solid var(--rule); border-radius: 999px; overflow: hidden; font-size: var(--step--1); font-weight: 700; }
+.langs a, .lang-current { padding: .3rem .6rem; text-decoration: none; color: var(--ink-soft); }
+.langs a:hover { color: var(--ink); background: color-mix(in srgb, var(--rule) 45%, transparent); }
+.lang-current { background: var(--ink); color: var(--paper); }
 .icon-link { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; color: var(--ink-soft); }
 .icon-link:hover { color: var(--sky); }
 @media (max-width: 900px) {
   .header-inner { flex-wrap: wrap; gap: .2rem .75rem; }
-  .brand { font-size: 1.1rem; }
-  .brand img { width: 36px; height: 36px; }
-  .header-actions { margin-left: auto; }
-  .nav { order: 3; width: 100%; margin-left: 0; overflow-x: auto; gap: 1.1rem; scrollbar-width: none; }
+  .brand { font-size: 1.3rem; }
+  .brand img { width: 46px; height: 46px; }
+  .brand { flex: 1 1 100%; }
+  .nav { order: 3; flex: 1 1 0; min-width: 0; margin-left: 0; overflow-x: auto; gap: 1.1rem; scrollbar-width: none; }
+  .header-actions { order: 4; margin-left: auto; }
   .nav a { white-space: nowrap; }
 }
 
@@ -291,3 +294,14 @@ p { margin: 0; }
 .footer-contact { display: grid; gap: .4rem; align-content: start; }
 .footer-label { font-weight: 700; color: #f5f6f2; }
 @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr; } }
+
+/* Page Le projet : logo sous la photo, encouragement moral */
+.logo-projet { margin-top: 2rem; background: var(--logo-bg); border: 1px solid var(--rule); border-radius: 6px; padding: clamp(1.5rem, 4vw, 2.5rem); display: grid; place-items: center; }
+.logo-projet img { width: 100%; max-width: 22rem; }
+.encouragement { margin-top: 2.5rem; padding: 1.25rem 1.4rem; border-left: 4px solid var(--olive); background: color-mix(in srgb, var(--olive) 8%, transparent); border-radius: 0 6px 6px 0; }
+.encouragement h2 { font-size: var(--step-1); margin-bottom: .6rem; }
+.encouragement p { display: grid; gap: .1rem; }
+.encouragement strong { font-size: 1.15rem; font-weight: 700; }
+.encouragement span { color: var(--ink-soft); }
+@media (max-width: 600px) { .header-actions .icon-link { display: none; } }
+@media (max-width: 420px) { .brand { font-size: 1.12rem; gap: .5rem; } .brand img { width: 40px; height: 40px; } .langs a, .lang-current { padding: .28rem .45rem; } }

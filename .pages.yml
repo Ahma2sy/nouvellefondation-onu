@@ -65,21 +65,21 @@ content:
         path: src/_data/partenaires.yml
         format: yaml
         fields:
-          - { name: titre, label: Titre de la page, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-          - { name: intro, label: Introduction, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - { name: titre, label: Titre de la page, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+          - { name: intro, label: Introduction, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
           - name: bandeau
             label: Image des logos
             type: object
             fields:
               - { name: image, label: Image, type: image }
-              - { name: alt, label: Description, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+              - { name: alt, label: Description, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
           - name: groupes
             label: Groupes de partenaires
             type: object
             list:
               collapsible: { collapsed: true, summary: "{fields.nom.fr}" }
             fields:
-              - { name: nom, label: Nom du groupe, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: nom, label: Nom du groupe, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
               - name: liens
                 label: Partenaires
                 type: object
@@ -87,9 +87,9 @@ content:
                   collapsible: { collapsed: true, summary: "{fields.nom}" }
                 fields:
                   - { name: nom, label: Nom, type: string }
-                  - { name: description, label: Description, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+                  - { name: description, label: Description, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
                   - { name: url, label: Site web, type: string }
-          - { name: signatairesTitre, label: Titre de la liste des signataires, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - { name: signatairesTitre, label: Titre de la liste des signataires, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
           - { name: signataires, label: Organisations signataires, type: string, list: true }
 
       - name: publications
@@ -98,7 +98,7 @@ content:
         path: src/_data/publications.yml
         format: yaml
         fields:
-          - { name: titre, label: Titre de la rubrique, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - { name: titre, label: Titre de la rubrique, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
           - name: liste
             label: Publications
             type: object
@@ -106,7 +106,7 @@ content:
               collapsible: { collapsed: true, summary: "{fields.date} {fields.titre.fr}" }
             fields:
               - { name: date, label: Date, type: date }
-              - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
               - { name: source, label: Source (facultatif), type: string }
               - { name: url, label: Lien, type: string }
               - { name: pdf, label: C'est un PDF, type: boolean }
@@ -117,38 +117,37 @@ content:
         path: src/_data/propositions.yml
         format: yaml
         fields:
-          - { name: titre, label: Titre de la page, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-          - { name: intro, label: Introduction, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - { name: titre, label: Titre de la page, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+          - { name: intro, label: Introduction, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
           - name: colonnes
             label: En-têtes du tableau
             type: object
             fields:
-              - { name: numero, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-              - { name: proposition, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-              - { name: contenu, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-          - { name: telechargements, label: Libellé des téléchargements, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: numero, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+              - { name: proposition, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+              - { name: contenu, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+          - { name: telechargements, label: Libellé des téléchargements, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
           - name: pdfFr
             label: PDF de la frise en français
             type: object
             fields:
-              - { name: label, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: label, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
               - { name: url, type: string }
           - name: pdfEn
             label: PDF de la frise en anglais
             type: object
             fields:
-              - { name: label, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: label, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
               - { name: url, type: string }
-          - { name: conclusion, label: Conclusion, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - { name: conclusion, label: Conclusion, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
           - name: temps
             label: Les trois temps
             type: object
             list:
               collapsible: { collapsed: true, summary: "{fields.nom.fr}" }
             fields:
-              - { name: nom, label: Nom, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-              - { name: horizon, label: Horizon, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-              - { name: resume, label: Résumé, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+              - { name: nom, label: Nom, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+              - { name: resume, label: Résumé, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
               - name: propositions
                 label: Propositions
                 type: object
@@ -156,8 +155,8 @@ content:
                   collapsible: { collapsed: true, summary: "{fields.numero}. {fields.titre.fr}" }
                 fields:
                   - { name: numero, label: Numéro, type: number }
-                  - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-                  - { name: texte, label: Texte, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+                  - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+                  - { name: texte, label: Texte, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
 
       - name: projet
         label: Le projet (Bureau, soutiens, documents)
@@ -165,21 +164,21 @@ content:
         path: src/_data/projet.yml
         format: yaml
         fields:
-          - { name: titre, label: Titre de la page, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-          - { name: intro, label: Introduction, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - { name: titre, label: Titre de la page, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+          - { name: intro, label: Introduction, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
           - name: paragraphes
             label: Paragraphes
             type: object
             list: true
-            fields: [{ name: fr, type: text }, { name: en, type: text }]
+            fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }]
           - name: photo
             label: Photo
             type: object
             fields:
               - { name: image, type: image }
-              - { name: alt, label: Description, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
-              - { name: legende, label: Légende, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
-          - { name: bureauTitre, label: Titre « Bureau », type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: alt, label: Description, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
+              - { name: legende, label: Légende, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
+          - { name: bureauTitre, label: Titre « Bureau », type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
           - name: bureau
             label: Membres du Bureau
             type: object
@@ -187,8 +186,8 @@ content:
               collapsible: { collapsed: true, summary: "{fields.nom}" }
             fields:
               - { name: nom, label: Nom, type: string }
-              - { name: role, label: Rôle, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-          - { name: personnalitesTitre, label: Titre « Personnalités », type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: role, label: Rôle, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+          - { name: personnalitesTitre, label: Titre « Personnalités », type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
           - name: personnalites
             label: Personnalités
             type: object
@@ -196,15 +195,23 @@ content:
               collapsible: { collapsed: true, summary: "{fields.nom}" }
             fields:
               - { name: nom, label: Nom, type: string }
-              - { name: role, label: Rôle, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
-          - { name: documentsTitre, label: Titre « Documents », type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: role, label: Rôle, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+          - name: encouragement
+            label: Encouragement moral (encadré sous les personnalités)
+            type: object
+            fields:
+              - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+              - { name: nom, label: Nom, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+              - { name: role, label: Qualité, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+          - { name: logoAlt, label: Description du logo, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+          - { name: documentsTitre, label: Titre « Documents », type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
           - name: documents
             label: Documents de référence
             type: object
             list:
               collapsible: { collapsed: true, summary: "{fields.titre.fr}" }
             fields:
-              - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
               - { name: url, label: Lien, type: string }
               - { name: pdf, label: C'est un PDF, type: boolean }
 

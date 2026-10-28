@@ -44,7 +44,7 @@ permalink: "{{ site.pages.accueil.url[lang] }}"
       <li class="temps temps-{{ loop.index }}">
         <div class="temps-head">
           <h3>{{ temps.nom | t(lang) }}</h3>
-          <span class="horizon">{{ temps.horizon | t(lang) }}</span>
+          {%- if temps.horizon %}<span class="horizon">{{ temps.horizon | t(lang) }}</span>{% endif %}
         </div>
         <p class="temps-resume">{{ temps.resume | t(lang) }}</p>
         <ol class="temps-liste">

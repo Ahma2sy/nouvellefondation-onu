@@ -1,11 +1,9 @@
 {#- Gabarit commun à toutes les pages.
-    Variables attendues : lang ("fr"/"en"), cle (clé de la page dans site.pages),
-    et éventuellement titreSeo, descriptionSeo, autreLangueUrl, imageSeo, schema. -#}
-{%- set autre = "en" if lang == "fr" else "fr" -%}
+    Variables attendues : lang ("fr", "en" ou "es"), cle (clé de la page dans site.pages),
+    et éventuellement titreSeo, descriptionSeo, imageSeo, schema, hreflangAbsent. -#}
 {%- set pageInfo = site.pages[cle] -%}
 {%- set titreSeo = titreSeo or (pageInfo.titre | t(lang)) -%}
 {%- set descriptionSeo = descriptionSeo or (pageInfo.description | t(lang)) -%}
-{%- set autreLangueUrl = autreLangueUrl or pageInfo.url[autre] -%}
 {%- set imageSeo = imageSeo or "/assets/img/partage.jpg" -%}
 <!doctype html>
 <html lang="{{ lang }}">
@@ -18,16 +16,17 @@
   <meta property="og:site_name" content="{{ site.nom | t(lang) }}">
   <meta property="og:title" content="{{ titreSeo }}">
   <meta property="og:description" content="{{ descriptionSeo }}">
-  <meta property="og:locale" content="{{ 'fr_FR' if lang == 'fr' else 'en_GB' }}">
+  <meta property="og:locale" content="{{ {'fr': 'fr_FR', 'en': 'en_GB', 'es': 'es_ES'}[lang] }}">
   <meta name="twitter:card" content="summary_large_image">
   {%- if site.url %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:image" content="{{ site.url }}{{ imageSeo }}">
   {%- if not hreflangAbsent %}
-  <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ page.url }}">
-  <link rel="alternate" hreflang="{{ autre }}" href="{{ site.url }}{{ autreLangueUrl }}">
-  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ pageInfo.url.fr if not hreflangAbsent else page.url }}">
+  {%- for L in site.langs %}
+  <link rel="alternate" hreflang="{{ L }}" href="{{ site.url }}{{ pageInfo.url[L] }}">
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ pageInfo.url.fr }}">
   {%- endif %}
   {%- endif %}
   {#- Icône du site : onglets du navigateur, favoris, résultats Google (multiples de 48 px), téléphones -#}
@@ -50,7 +49,7 @@
     "name": "{{ site.nomCourt.fr }}",
     "alternateName": ["{{ site.nom.fr }}", "{{ site.nom.en }}"],
     "url": "{{ site.url }}/",
-    "inLanguage": ["fr", "en"]
+    "inLanguage": ["fr", "en", "es"]
   }
   </script>
   {%- endif %}
@@ -60,7 +59,7 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "{{ site.nom.fr }}",
-    "alternateName": ["{{ site.nom.en }}", "Nouvelle Fondation", "New Foundation Project"],
+    "alternateName": ["{{ site.nom.en }}", "{{ site.nom.es }}", "Projet Nouvelle Fondation", "New Foundation Project"],
     "description": "{{ site.pages.accueil.description | t(lang) }}",
     "email": "{{ site.email }}",
     {%- if site.url %}

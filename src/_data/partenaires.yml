@@ -1,59 +1,90 @@
-# Page « Partenaires »
+# Page « Partenaires » : pour ajouter un partenaire, copier un bloc « - nom: ... » dans le bon groupe.
 
-titre: { fr: Partenaires et signataires, en: Partners and supporters }
+titre:
+  fr: Partenaires et signataires
+  en: Partners and supporters
+  es: Socios y firmantes
 intro:
   fr: Les coalitions et associations avec lesquelles Nouvelle Fondation travaille, et les organisations qui soutiennent nos onze propositions.
   en: The coalitions and associations New Foundation works with, and the organisations supporting our eleven proposals.
-
+  es: Las coaliciones y asociaciones con las que trabaja Nueva Fundación, y las organizaciones que apoyan nuestras once propuestas.
 bandeau:
   image: /assets/img/logos-associations.jpg
   alt:
-    fr: "Logos des associations partenaires : Pax Christi Vlaanderen, Utopia, Article 109, IPB, Anastasis, Pax Christi France, Convivialisme, Université Européenne de la Paix, Lutte et Contemplation, Chrétiens de la Méditerranée, Mouvement de la Paix, Pax Christi International, IFCU, MIAMSI"
-    en: "Partner logos: Pax Christi Vlaanderen, Utopia, Article 109, IPB, Anastasis, Pax Christi France, Convivialism, European University of Peace, Lutte et Contemplation, Chrétiens de la Méditerranée, Mouvement de la Paix, Pax Christi International, IFCU, MIAMSI"
-
-# Pour ajouter un partenaire : copier un bloc « - nom: ... » dans le bon groupe.
+    fr: 'Logos des associations partenaires : Pax Christi Vlaanderen, Utopia, Article 109, IPB, Anastasis, Pax Christi France, Convivialisme, Université Européenne de la Paix, Lutte et Contemplation, Chrétiens de la Méditerranée, Mouvement de la Paix, Pax Christi International, IFCU, MIAMSI'
+    en: 'Partner logos: Pax Christi Vlaanderen, Utopia, Article 109, IPB, Anastasis, Pax Christi France, Convivialism, European University of Peace, Lutte et Contemplation, Chrétiens de la Méditerranée, Mouvement de la Paix, Pax Christi International, IFCU, MIAMSI'
+    es: 'Logotipos de los socios: Pax Christi Vlaanderen, Utopia, Article 109, IPB, Anastasis, Pax Christi Francia, Convivialismo, Universidad Europea de la Paz, Lutte et Contemplation, Chrétiens de la Méditerranée, Mouvement de la Paix, Pax Christi Internacional, FIUC, MIAMSI'
 groupes:
-  - nom: { fr: Coalitions, en: Coalitions }
-    liens:
-      - nom: Article 109
-        description: { fr: Coalition pour une Charte des Nations unies renouvelée, en: Coalition for a renewed UN Charter }
-        url: https://article109.org/
-      - nom: IPB, International Peace Bureau
-        description: { fr: "Bureau international de la paix, prix Nobel de la paix 1910", en: "Nobel Peace Prize laureate, 1910" }
-        url: https://ipb.org/
-  - nom: { fr: Associations, en: Associations }
-    liens:
-      - nom: Pax Christi France
-        description: { fr: Mouvement catholique pour la paix, en: Catholic peace movement in France }
-        url: https://www.paxchristi.fr/
-      - nom: Pax Christi International
-        description: { fr: Réseau catholique international pour la paix, en: International Catholic peace network }
-        url: https://paxchristi.net/
-      - nom: Mouvement de la Paix
-        description: { fr: Association française pour la paix et le désarmement, en: French association for peace and disarmament }
-        url: https://www.mvtpaix.org/
-      - nom: MIAMSI
-        description: { fr: Mouvement international d’apostolat des milieux sociaux indépendants, en: International Movement of Apostolate in the Independent Social Milieus }
-        url: http://www.miamsi-rome.org/
-      - nom: Université Européenne de la Paix
-        description: { fr: "Éducation à la paix, Brest", en: "Peace education, Brest" }
-        url: https://www.uep.infini.fr/
-
-signatairesTitre: { fr: Organisations qui soutiennent les propositions, en: Organisations supporting the proposals }
+- nom:
+    fr: Coalitions
+    en: Coalitions
+    es: Coaliciones
+  liens:
+  - nom: Article 109
+    description:
+      fr: Coalition pour une Charte des Nations unies renouvelée
+      en: Coalition for a renewed UN Charter
+      es: Coalición por una Carta de las Naciones Unidas renovada
+    url: https://article109.org/
+  - nom: IPB, International Peace Bureau
+    description:
+      fr: Bureau international de la paix, prix Nobel de la paix 1910
+      en: Nobel Peace Prize laureate, 1910
+      es: Premio Nobel de la Paz 1910
+    url: https://ipb.org/
+- nom:
+    fr: Associations
+    en: Associations
+    es: Asociaciones
+  liens:
+  - nom: Pax Christi France
+    description:
+      fr: Mouvement catholique pour la paix
+      en: Catholic peace movement in France
+      es: Movimiento católico por la paz en Francia
+    url: https://www.paxchristi.fr/
+  - nom: Pax Christi International
+    description:
+      fr: Réseau catholique international pour la paix
+      en: International Catholic peace network
+      es: Red católica internacional por la paz
+    url: https://paxchristi.net/
+  - nom: Mouvement de la Paix
+    description:
+      fr: Association française pour la paix et le désarmement
+      en: French association for peace and disarmament
+      es: Asociación francesa por la paz y el desarme
+    url: https://www.mvtpaix.org/
+  - nom: MIAMSI
+    description:
+      fr: Mouvement international d’apostolat des milieux sociaux indépendants
+      en: International Movement of Apostolate in the Independent Social Milieus
+      es: Movimiento Internacional de Apostolado de los Medios Sociales Independientes
+    url: http://www.miamsi-rome.org/
+  - nom: Université Européenne de la Paix
+    description:
+      fr: Éducation à la paix, Brest
+      en: Peace education, Brest
+      es: Educación para la paz, Brest
+    url: https://www.uep.infini.fr/
+signatairesTitre:
+  fr: Organisations qui soutiennent les propositions
+  en: Organisations supporting the proposals
+  es: Organizaciones que apoyan las propuestas
 signataires:
-  - Pax Christi International
-  - Pax Christi France
-  - Pax Christi Flandres
-  - Chrétiens de la Méditerranée
-  - MIAMSI
-  - Collectif ANASTASIS
-  - Lutte et Contemplation
-  - Les Convivialistes
-  - FIUC, Fédération internationale des universités catholiques
-  - Mouvement de la Paix
-  - Université Européenne de la Paix
-  - UTOPIA
-  - JESC, Jesuit European Social Centre (Belgique)
-  - RJMP, Réseau Jeunes dans le Monde pour la Paix (RD Congo)
-  - Fondation Cœur et Vie (Cameroun)
-  - ACNU, Association camerounaise pour les Nations unies
+- Pax Christi International
+- Pax Christi France
+- Pax Christi Flandres
+- Chrétiens de la Méditerranée
+- MIAMSI
+- Collectif ANASTASIS
+- Lutte et Contemplation
+- Les Convivialistes
+- FIUC, Fédération internationale des universités catholiques
+- Mouvement de la Paix
+- Université Européenne de la Paix
+- UTOPIA
+- JESC, Jesuit European Social Centre (Belgique)
+- RJMP, Réseau Jeunes dans le Monde pour la Paix (RD Congo)
+- Fondation Cœur et Vie (Cameroun)
+- ACNU, Association camerounaise pour les Nations unies
