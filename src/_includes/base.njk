@@ -1,0 +1,98 @@
+{#- Gabarit commun à toutes les pages.
+    Variables attendues : lang ("fr"/"en"), cle (clé de la page dans site.pages),
+    et éventuellement titreSeo, descriptionSeo, autreLangueUrl, imageSeo, schema. -#}
+{%- set autre = "en" if lang == "fr" else "fr" -%}
+{%- set pageInfo = site.pages[cle] -%}
+{%- set titreSeo = titreSeo or (pageInfo.titre | t(lang)) -%}
+{%- set descriptionSeo = descriptionSeo or (pageInfo.description | t(lang)) -%}
+{%- set autreLangueUrl = autreLangueUrl or pageInfo.url[autre] -%}
+{%- set imageSeo = imageSeo or "/assets/img/partage.jpg" -%}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ titreSeo }}</title>
+  <meta name="description" content="{{ descriptionSeo }}">
+  <meta property="og:type" content="{{ 'article' if schema == 'article' else 'website' }}">
+  <meta property="og:site_name" content="{{ site.nom | t(lang) }}">
+  <meta property="og:title" content="{{ titreSeo }}">
+  <meta property="og:description" content="{{ descriptionSeo }}">
+  <meta property="og:locale" content="{{ 'fr_FR' if lang == 'fr' else 'en_GB' }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {%- if site.url %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}{{ imageSeo }}">
+  {%- if not hreflangAbsent %}
+  <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}{{ page.url }}">
+  <link rel="alternate" hreflang="{{ autre }}" href="{{ site.url }}{{ autreLangueUrl }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ pageInfo.url.fr if not hreflangAbsent else page.url }}">
+  {%- endif %}
+  {%- endif %}
+  {#- Icône du site : onglets du navigateur, favoris, résultats Google (multiples de 48 px), téléphones -#}
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/assets/img/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#15233d">
+  <link rel="preload" href="/assets/fonts/spectral-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {%- if cle == "accueil" and site.url %}
+  {#- Nom du site affiché par Google au-dessus des résultats -#}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.nomCourt.fr }}",
+    "alternateName": ["{{ site.nom.fr }}", "{{ site.nom.en }}"],
+    "url": "{{ site.url }}/",
+    "inLanguage": ["fr", "en"]
+  }
+  </script>
+  {%- endif %}
+  {%- if cle == "accueil" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.nom.fr }}",
+    "alternateName": ["{{ site.nom.en }}", "Nouvelle Fondation", "New Foundation Project"],
+    "description": "{{ site.pages.accueil.description | t(lang) }}",
+    "email": "{{ site.email }}",
+    {%- if site.url %}
+    "url": "{{ site.url }}/",
+    "logo": "{{ site.url }}/assets/img/icon-512.png",
+    {%- endif %}
+    "sameAs": ["{{ site.linkedin }}", "{{ site.pageHistorique }}"]
+  }
+  </script>
+  {%- endif %}
+  {%- if schema == "article" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ titreSeo | dump | safe }},
+    "description": {{ descriptionSeo | dump | safe }},
+    "datePublished": "{{ page.date | dateIso }}",
+    "inLanguage": "{{ lang }}",
+    "author": { "@type": "Organization", "name": "{{ site.nom.fr }}" },
+    "publisher": { "@type": "Organization", "name": "{{ site.nom.fr }}"{% if site.url %}, "logo": { "@type": "ImageObject", "url": "{{ site.url }}/assets/img/icon-512.png" }{% endif %} }
+  }
+  </script>
+  {%- endif %}
+</head>
+<body class="page-{{ cle }}">
+  <a class="skip" href="#contenu">{{ site.ui.aller | t(lang) }}</a>
+  {% include "partials/entete.njk" %}
+  <main id="contenu">
+    {{ content | safe }}
+  </main>
+  {% include "partials/pied.njk" %}
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

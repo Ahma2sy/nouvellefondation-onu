@@ -1,0 +1,32 @@
+# Page « Agir »
+
+titre: { fr: Agir avec nous, en: Act with us }
+intro:
+  fr: "Une analyse sans mobilisation reste une analyse. Notre méthode est celle d’ICAN : rassembler assez de signatures d’organisations pour que le texte devienne impossible à ignorer."
+  en: "Analysis without mobilisation stays on paper. Our method is ICAN’s: gather enough organisational signatures that the text becomes impossible to ignore."
+
+actions:
+  - titre: { fr: Signer la pétition, en: Sign the petition }
+    texte:
+      fr: La pétition reprend l’intégralité de nos propositions et se signe en une minute. Pour signer au nom d’une organisation, inscrivez son nom dans les champs prénom et nom.
+      en: The petition covers all our proposals and takes one minute to sign. To sign on behalf of an organisation, enter its name in the first and last name fields.
+    bouton: { fr: Signer sur Change.org, en: Sign on Change.org }
+    url: https://www.change.org/p/reforming-the-united-nations-12-proposals-for-a-fairer-more-responsive-global-system
+  - titre: { fr: Pétition à l’Assemblée nationale, en: French National Assembly petition }
+    texte:
+      fr: La pétition officielle déposée sur le site de l’Assemblée nationale.
+      en: The official petition filed on the French National Assembly website.
+    bouton: { fr: Signer sur le site de l’Assemblée, en: Sign on the Assembly website }
+    url: https://petitions.assemblee-nationale.fr/initiatives/i-3378?locale=fr
+  - titre: { fr: Suivre et partager, en: Follow and share }
+    texte:
+      fr: Partager auprès de votre réseau compte davantage que signer. Nos publications, en français et en anglais, sont sur LinkedIn.
+      en: Sharing with your network matters even more than signing. Our posts, in French and English, are on LinkedIn.
+    bouton: { fr: Suivre sur LinkedIn, en: Follow on LinkedIn }
+    url: https://www.linkedin.com/company/146203136/
+
+rejoindre:
+  titre: { fr: Rejoindre le groupe de travail, en: Join the working group }
+  texte:
+    fr: Votre ONG souhaite rejoindre le groupe qui porte le projet, ou figurer parmi les organisations qui soutiennent les propositions ? Nous recherchons en particulier des organisations et des experts établis à Paris, New York, Genève et Vienne. Écrivez-nous.
+    en: Would your NGO like to join the group behind the project, or be listed among the organisations supporting the proposals? We are especially looking for organisations and experts based in Paris, New York, Geneva and Vienna. Write to us.

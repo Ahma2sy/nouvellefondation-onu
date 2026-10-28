@@ -1,0 +1,42 @@
+---
+layout: base.njk
+---
+{%- import "partials/composants.njk" as c -%}
+<article class="article-page">
+  <header class="page-head article-head">
+    <div class="wrap narrow">
+      <p class="retour"><a href="{{ site.pages.actualites.url[lang] }}">{{ site.ui.retourActus | t(lang) }}</a></p>
+      <h1>{{ titre }}</h1>
+      <p class="page-intro">{{ resume }}</p>
+      <p class="article-date">{{ site.ui.publieLe | t(lang) }} <time datetime="{{ page.date | dateIso }}">{{ page.date | dateLongue(lang) }}</time></p>
+    </div>
+  </header>
+  {%- if image %}
+  <div class="wrap narrow article-image">
+    <img src="{{ image }}" alt="{{ image_alt }}" loading="eager">
+  </div>
+  {%- endif %}
+  <div class="wrap narrow prose article-body">
+    {{ content | safe }}
+    {%- if linkedin %}
+    <p class="article-linkedin"><a href="{{ linkedin }}" target="_blank" rel="noopener">{{ site.ui.surLinkedin | t(lang) }}</a></p>
+    {%- endif %}
+  </div>
+</article>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head row">
+      <h2>{{ accueil.actus.titre | t(lang) }}</h2>
+      <a class="lien-fleche" href="{{ site.pages.actualites.url[lang] }}">{{ site.ui.toutesActus | t(lang) }}</a>
+    </div>
+    <ul class="post-grid">
+      {%- set n = 0 -%}
+      {%- for article in collections.articles -%}
+      {%- if article.url != page.url and n < 3 -%}
+      {{ c.carteArticle(article, lang, site) }}
+      {%- set n = n + 1 -%}
+      {%- endif -%}
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

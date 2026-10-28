@@ -1,0 +1,217 @@
+# Configuration de l'interface d'édition Pages CMS (https://app.pagescms.org).
+# Elle décrit les formulaires proposés pour modifier le site sans toucher au code.
+
+media:
+  input: src/medias
+  output: /medias
+  categories: [image, document]
+
+content:
+  - name: actualites
+    label: Actualités (blog)
+    type: collection
+    path: src/actualites
+    format: yaml-frontmatter
+    filename: "{year}-{month}-{day}-{titre}.md"
+    exclude: [actualites.11tydata.js]
+    view:
+      primary: titre
+      fields: [titre, date]
+      sort: date
+      order: desc
+    fields:
+      - name: titre
+        label: Titre
+        type: string
+        required: true
+      - name: date
+        label: Date de publication
+        type: date
+        required: true
+      - name: resume
+        label: Résumé (2 phrases, affiché sur les cartes et dans Google)
+        type: text
+        required: true
+      - name: image
+        label: Image (facultatif, format paysage)
+        type: image
+      - name: image_alt
+        label: Description de l'image (pour les malvoyants et Google)
+        type: string
+      - name: linkedin
+        label: Lien de la publication LinkedIn (facultatif)
+        type: string
+      - name: lang
+        label: Langue de l'article
+        type: select
+        options:
+          values: [fr, en]
+      - name: brouillon
+        label: Brouillon (cocher pour ne pas publier)
+        type: boolean
+      - name: body
+        label: Texte de l'article
+        type: rich-text
+        options:
+          format: markdown
+
+  - name: donnees
+    label: Contenu des pages
+    type: group
+    items:
+      - name: partenaires
+        label: Partenaires et signataires
+        type: file
+        path: src/_data/partenaires.yml
+        format: yaml
+        fields:
+          - { name: titre, label: Titre de la page, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - { name: intro, label: Introduction, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - name: bandeau
+            label: Image des logos
+            type: object
+            fields:
+              - { name: image, label: Image, type: image }
+              - { name: alt, label: Description, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - name: groupes
+            label: Groupes de partenaires
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{fields.nom.fr}" }
+            fields:
+              - { name: nom, label: Nom du groupe, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - name: liens
+                label: Partenaires
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{fields.nom}" }
+                fields:
+                  - { name: nom, label: Nom, type: string }
+                  - { name: description, label: Description, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+                  - { name: url, label: Site web, type: string }
+          - { name: signatairesTitre, label: Titre de la liste des signataires, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - { name: signataires, label: Organisations signataires, type: string, list: true }
+
+      - name: publications
+        label: Publications et documents (PDF, presse)
+        type: file
+        path: src/_data/publications.yml
+        format: yaml
+        fields:
+          - { name: titre, label: Titre de la rubrique, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - name: liste
+            label: Publications
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{fields.date} {fields.titre.fr}" }
+            fields:
+              - { name: date, label: Date, type: date }
+              - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: source, label: Source (facultatif), type: string }
+              - { name: url, label: Lien, type: string }
+              - { name: pdf, label: C'est un PDF, type: boolean }
+
+      - name: propositions
+        label: Les 11 propositions
+        type: file
+        path: src/_data/propositions.yml
+        format: yaml
+        fields:
+          - { name: titre, label: Titre de la page, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - { name: intro, label: Introduction, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - name: colonnes
+            label: En-têtes du tableau
+            type: object
+            fields:
+              - { name: numero, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: proposition, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: contenu, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - { name: telechargements, label: Libellé des téléchargements, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - name: pdfFr
+            label: PDF de la frise en français
+            type: object
+            fields:
+              - { name: label, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: url, type: string }
+          - name: pdfEn
+            label: PDF de la frise en anglais
+            type: object
+            fields:
+              - { name: label, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: url, type: string }
+          - { name: conclusion, label: Conclusion, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - name: temps
+            label: Les trois temps
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{fields.nom.fr}" }
+            fields:
+              - { name: nom, label: Nom, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: horizon, label: Horizon, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: resume, label: Résumé, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+              - name: propositions
+                label: Propositions
+                type: object
+                list:
+                  collapsible: { collapsed: true, summary: "{fields.numero}. {fields.titre.fr}" }
+                fields:
+                  - { name: numero, label: Numéro, type: number }
+                  - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+                  - { name: texte, label: Texte, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+
+      - name: projet
+        label: Le projet (Bureau, soutiens, documents)
+        type: file
+        path: src/_data/projet.yml
+        format: yaml
+        fields:
+          - { name: titre, label: Titre de la page, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - { name: intro, label: Introduction, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - name: paragraphes
+            label: Paragraphes
+            type: object
+            list: true
+            fields: [{ name: fr, type: text }, { name: en, type: text }]
+          - name: photo
+            label: Photo
+            type: object
+            fields:
+              - { name: image, type: image }
+              - { name: alt, label: Description, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+              - { name: legende, label: Légende, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }] }
+          - { name: bureauTitre, label: Titre « Bureau », type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - name: bureau
+            label: Membres du Bureau
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{fields.nom}" }
+            fields:
+              - { name: nom, label: Nom, type: string }
+              - { name: role, label: Rôle, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - { name: personnalitesTitre, label: Titre « Personnalités », type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - name: personnalites
+            label: Personnalités
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{fields.nom}" }
+            fields:
+              - { name: nom, label: Nom, type: string }
+              - { name: role, label: Rôle, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - { name: documentsTitre, label: Titre « Documents », type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+          - name: documents
+            label: Documents de référence
+            type: object
+            list:
+              collapsible: { collapsed: true, summary: "{fields.titre.fr}" }
+            fields:
+              - { name: titre, label: Titre, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }] }
+              - { name: url, label: Lien, type: string }
+              - { name: pdf, label: C'est un PDF, type: boolean }
+
+      - name: fichiers-avances
+        label: Autres textes (accueil, agir, réglages)
+        type: group
+        items:
+          - { name: accueil, label: Page d'accueil, type: file, path: src/_data/accueil.yml, format: code }
+          - { name: agir, label: Page Agir, type: file, path: src/_data/agir.yml, format: code }
+          - { name: site, label: Réglages du site (menu, SEO, adresse), type: file, path: src/_data/site.yml, format: code }

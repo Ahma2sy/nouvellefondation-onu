@@ -1,0 +1,20 @@
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img src="/assets/logos/logo-blanc-texte.svg" alt="{{ site.nom | t(lang) }}" width="300" height="74">
+      <p>{{ site.ui.piedDePage | t(lang) }}</p>
+    </div>
+    <nav class="footer-nav" aria-label="{{ site.ui.navigation | t(lang) }}">
+      <a href="{{ site.pages.accueil.url[lang] }}">{{ site.pages.accueil.menu | t(lang) }}</a>
+      {%- for k in site.menu %}
+      <a href="{{ site.pages[k].url[lang] }}">{{ site.pages[k].menu | t(lang) }}</a>
+      {%- endfor %}
+    </nav>
+    <div class="footer-contact">
+      <p class="footer-label">{{ site.ui.contact | t(lang) }}</p>
+      <p class="email">{{ site.email }}</p>
+      <p><a href="{{ site.linkedin }}" target="_blank" rel="noopener">{{ site.ui.linkedin | t(lang) }}</a></p>
+      <p><a href="{{ site.pageHistorique }}" target="_blank" rel="noopener">{{ site.ui.historique | t(lang) }}</a></p>
+    </div>
+  </div>
+</footer>

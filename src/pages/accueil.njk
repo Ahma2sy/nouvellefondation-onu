@@ -1,0 +1,94 @@
+---
+pagination: { data: site.langs, size: 1, alias: lang }
+cle: accueil
+layout: base.njk
+permalink: "{{ site.pages.accueil.url[lang] }}"
+---
+{%- import "partials/composants.njk" as c -%}
+{%- set A = accueil -%}
+<section class="hero">
+  <picture>
+    <source srcset="/assets/img/onu-geneve.webp" type="image/webp">
+    <img class="hero-photo" src="/assets/img/onu-geneve.jpg" alt="" width="1280" height="572" fetchpriority="high">
+  </picture>
+  <div class="wrap hero-inner">
+    <p class="hero-name">{{ site.nom | t(lang) }}</p>
+    <h1>{{ A.hero.titre | t(lang) }}</h1>
+    <p class="hero-lead">{{ A.hero.texte | t(lang) }}</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="{{ site.pages.propositions.url[lang] }}">{{ A.hero.bouton1 | t(lang) }}</a>
+      <a class="btn btn-ghost" href="{{ site.pages.agir.url[lang] }}">{{ A.hero.bouton2 | t(lang) }}</a>
+    </div>
+  </div>
+  <p class="wrap hero-credit">{{ site.ui.creditPhoto | t(lang) }}</p>
+</section>
+
+<section class="section constat">
+  <div class="wrap constat-grid">
+    <h2>{{ A.constat.titre | t(lang) }}</h2>
+    <div class="constat-text">
+      <p>{{ A.constat.texte | t(lang) }}</p>
+      <p><a class="lien-fleche" href="{{ site.pages.projet.url[lang] }}">{{ A.constat.lien | t(lang) }}</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section apercu-frise">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ A.frise.titre | t(lang) }}</h2>
+      <p class="section-intro">{{ A.frise.texte | t(lang) }}</p>
+    </div>
+    <ol class="temps-grid">
+      {%- for temps in propositions.temps %}
+      <li class="temps temps-{{ loop.index }}">
+        <div class="temps-head">
+          <h3>{{ temps.nom | t(lang) }}</h3>
+          <span class="horizon">{{ temps.horizon | t(lang) }}</span>
+        </div>
+        <p class="temps-resume">{{ temps.resume | t(lang) }}</p>
+        <ol class="temps-liste">
+          {%- for p in temps.propositions %}
+          <li><a href="{{ site.pages.propositions.url[lang] }}#proposition-{{ p.numero }}"><span class="n">{{ p.numero }}</span> {{ p.titre | t(lang) }}</a></li>
+          {%- endfor %}
+        </ol>
+      </li>
+      {%- endfor %}
+    </ol>
+    <p class="section-cta"><a class="btn btn-ink" href="{{ site.pages.propositions.url[lang] }}">{{ A.frise.lien | t(lang) }}</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head row">
+      <h2>{{ A.actus.titre | t(lang) }}</h2>
+      <a class="lien-fleche" href="{{ site.pages.actualites.url[lang] }}">{{ site.ui.toutesActus | t(lang) }}</a>
+    </div>
+    <ul class="post-grid">
+      {%- for article in collections.articles | head(3) %}
+      {{ c.carteArticle(article, lang, site) }}
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section partenaires-apercu">
+  <div class="wrap">
+    <div class="section-head row">
+      <h2>{{ A.partenaires.titre | t(lang) }}</h2>
+      <a class="lien-fleche" href="{{ site.pages.partenaires.url[lang] }}">{{ A.partenaires.lien | t(lang) }}</a>
+    </div>
+    <div class="bandeau"><img src="{{ partenaires.bandeau.image }}" alt="{{ partenaires.bandeau.alt | t(lang) }}" width="1349" height="680" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="appel">
+  <div class="wrap appel-inner">
+    <div>
+      <h2>{{ A.appel.titre | t(lang) }}</h2>
+      <p>{{ A.appel.texte | t(lang) }}</p>
+    </div>
+    <a class="btn btn-primary" href="{{ site.pages.agir.url[lang] }}">{{ A.appel.bouton | t(lang) }}</a>
+  </div>
+</section>

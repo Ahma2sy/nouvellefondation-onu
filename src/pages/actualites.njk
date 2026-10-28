@@ -1,0 +1,30 @@
+---
+pagination: { data: site.langs, size: 1, alias: lang }
+cle: actualites
+layout: base.njk
+permalink: "{{ site.pages.actualites.url[lang] }}"
+---
+{%- import "partials/composants.njk" as c -%}
+{{ c.enteteDePage(site.pages.actualites.menu | t(lang), site.pages.actualites.description | t(lang)) }}
+<section class="section first">
+  <div class="wrap">
+    <ul class="post-grid">
+      {%- for article in collections.articles %}
+      {{ c.carteArticle(article, lang, site) }}
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap narrow">
+    <h2>{{ publications.titre | t(lang) }}</h2>
+    <ol class="article-list">
+      {%- for pub in publications.liste | trierParDate %}
+      <li class="article">
+        <p class="meta"><time datetime="{{ pub.date | dateIso }}">{{ pub.date | dateLongue(lang) }}</time>{% if pub.source %}, {{ pub.source }}{% endif %}</p>
+        <h3><a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.titre | t(lang) }}{% if pub.pdf %}<span class="tag">{{ site.ui.pdf | t(lang) }}</span>{% endif %}</a></h3>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>

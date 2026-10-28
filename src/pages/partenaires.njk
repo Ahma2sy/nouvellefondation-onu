@@ -1,0 +1,38 @@
+---
+pagination: { data: site.langs, size: 1, alias: lang }
+cle: partenaires
+layout: base.njk
+permalink: "{{ site.pages.partenaires.url[lang] }}"
+---
+{%- import "partials/composants.njk" as c -%}
+{%- set P = partenaires -%}
+{{ c.enteteDePage(P.titre | t(lang), P.intro | t(lang)) }}
+<section class="section first">
+  <div class="wrap">
+    <div class="bandeau"><img src="{{ P.bandeau.image }}" alt="{{ P.bandeau.alt | t(lang) }}" width="1349" height="680"></div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap partner-groups">
+    {%- for g in P.groupes %}
+    <div class="partner-group">
+      <h2>{{ g.nom | t(lang) }}</h2>
+      <ul class="partner-list">
+        {%- for l in g.liens %}
+        <li><a href="{{ l.url }}" target="_blank" rel="noopener"><strong>{{ l.nom }}</strong><span>{{ l.description | t(lang) }}</span><span class="host">{{ l.url | hote }}</span></a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2>{{ P.signatairesTitre | t(lang) }}</h2>
+    <ul class="soutiens">
+      {%- for s in P.signataires %}
+      <li>{{ s }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>

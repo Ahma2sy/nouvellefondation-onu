@@ -1,0 +1,29 @@
+---
+pagination: { data: site.langs, size: 1, alias: lang }
+cle: propositions
+layout: base.njk
+permalink: "{{ site.pages.propositions.url[lang] }}"
+---
+{%- import "partials/composants.njk" as c -%}
+{%- set P = propositions -%}
+{{ c.enteteDePage(P.titre | t(lang), P.intro | t(lang)) }}
+<section class="section first">
+  <div class="wrap">
+    {{ c.tableauPropositions(P, lang) }}
+    <p class="conclusion">{{ P.conclusion | t(lang) }}</p>
+    <div class="downloads">
+      <span>{{ P.telechargements | t(lang) }}</span>
+      <a href="{{ P.pdfFr.url }}" target="_blank" rel="noopener">{{ P.pdfFr.label | t(lang) }}</a>
+      <a href="{{ P.pdfEn.url }}" target="_blank" rel="noopener">{{ P.pdfEn.label | t(lang) }}</a>
+    </div>
+  </div>
+</section>
+<section class="appel">
+  <div class="wrap appel-inner">
+    <div>
+      <h2>{{ accueil.appel.titre | t(lang) }}</h2>
+      <p>{{ accueil.appel.texte | t(lang) }}</p>
+    </div>
+    <a class="btn btn-primary" href="{{ site.pages.agir.url[lang] }}">{{ accueil.appel.bouton | t(lang) }}</a>
+  </div>
+</section>

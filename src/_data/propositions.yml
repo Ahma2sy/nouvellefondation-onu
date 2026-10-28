@@ -1,0 +1,97 @@
+# Les 11 propositions, classées en trois temps (frise prospective).
+
+titre: { fr: "Onze propositions, trois temps", en: "Eleven proposals, three stages" }
+intro:
+  fr: "Un catalogue de propositions ne dit rien de leur faisabilité. Nous avons donc classé les nôtres selon ce qu’elles exigent du droit existant : certaines s’appuient sur des institutions déjà en place, d’autres se heurtent à des intérêts d’États, les dernières supposent d’amender la Charte, ce qui requiert une majorité des deux tiers à l’Assemblée générale et l’accord des cinq membres permanents du Conseil de sécurité."
+  en: "A list of proposals says nothing about whether they can happen. So we have ordered ours by what they require of existing law: some build on institutions already in place, others run up against state interests, and the last ones require amending the Charter, which needs a two-thirds majority in the General Assembly and the agreement of the five permanent members of the Security Council."
+colonnes:
+  numero: { fr: N°, en: No. }
+  proposition: { fr: Proposition, en: Proposal }
+  contenu: { fr: Ce qu’elle prévoit, en: What it involves }
+telechargements: { fr: Frise complète, en: Full timeline }
+pdfFr:
+  label: { fr: Version française (PDF), en: French version (PDF) }
+  url: https://www.signesdestemps.me/wp-content/uploads/2026/05/FRISE-PROSPECTIVE-CHRONOLOGIQUE-2-3.pdf
+pdfEn:
+  label: { fr: Version anglaise (PDF), en: English version (PDF) }
+  url: https://www.signesdestemps.me/wp-content/uploads/2026/05/PROSPECTIVE-CHRONOLOGICAL-TIMELINE.pdf
+conclusion:
+  fr: Les trois dernières propositions se heurteront au veto de ceux qu’elles visent. Nous les portons quand même, parce qu’un objectif qu’on renonce à formuler n’a aucune chance d’être atteint.
+  en: The last three proposals will run into the veto of those they target. We put them forward anyway, because a goal that is never stated has no chance of being reached.
+
+temps:
+  - nom: { fr: Premier temps, en: First stage }
+    horizon: { fr: Court terme, en: Short term }
+    resume:
+      fr: "Réalisable dès maintenant : s’appuie sur des institutions qui existent déjà, sans révision de la Charte."
+      en: "Achievable now, building on existing institutions without amending the Charter."
+    propositions:
+      - numero: 1
+        titre: { fr: Donner toute leur place aux ONG, en: Give NGOs their full place }
+        texte:
+          fr: Rehausser le statut des ONG dans les instances de l’ONU et pérenniser les Forums mondiaux des ONG, en s’appuyant sur des pratiques établies, du Comité de liaison ONG-UNESCO à l’ECOSOC.
+          en: Raise the status of NGOs in UN bodies and make the NGO World Forums permanent, building on established practice from the NGO-UNESCO Liaison Committee to ECOSOC.
+      - numero: 2
+        titre: { fr: Transparence financière des OING, en: Financial transparency for INGOs }
+        texte:
+          fr: Instaurer pour les organisations internationales non gouvernementales des normes de transparence financière inspirées du GAFI.
+          en: Introduce FATF-style financial transparency standards for international non-governmental organisations.
+      - numero: 3
+        titre: { fr: Soutenir la démocratie représentative, en: Support representative democracy }
+        texte:
+          fr: Permettre à l’Union interparlementaire, qui réunit à Genève des parlementaires du monde entier, de soumettre chaque année une proposition de loi aux assemblées nationales.
+          en: Allow the Inter-Parliamentary Union, which gathers parliamentarians from around the world in Geneva, to submit one legislative proposal a year to national parliaments.
+      - numero: 4
+        titre: { fr: Réguler le numérique et l’IA, en: Regulate digital technology and AI }
+        texte:
+          fr: Une régulation internationale du numérique et de l’intelligence artificielle, y compris militaire, qui place la dignité humaine au cœur du dispositif.
+          en: International regulation of digital technology and artificial intelligence, including military uses, with human dignity at its core.
+      - numero: 5
+        titre: { fr: Sécurité humaine et normes communes, en: Human security and shared standards }
+        texte:
+          fr: Promouvoir la sécurité humaine, au sens du PNUD de 1994, par des normes commerciales sociales et environnementales contraignantes, en mobilisant l’ECOSOC, l’OIT, l’OMC et le PNUE.
+          en: Promote human security, as defined by UNDP in 1994, through binding social and environmental trade standards, drawing on ECOSOC, the ILO, the WTO and UNEP.
+
+  - nom: { fr: Deuxième temps, en: Second stage }
+    horizon: { fr: Moyen terme, en: Medium term }
+    resume:
+      fr: Réalisable en droit, difficile en politique.
+      en: Legally possible, politically difficult.
+    propositions:
+      - numero: 6
+        titre: { fr: Casques bleus et voie diplomatique, en: Peacekeeping and diplomacy first }
+        texte:
+          fr: Renforcer le recours aux casques bleus et privilégier le règlement diplomatique et judiciaire des conflits.
+          en: Make greater use of UN peacekeepers and favour diplomatic and judicial settlement of conflicts.
+      - numero: 7
+        titre: { fr: Embargo sur les armes, en: Arms embargoes }
+        texte:
+          fr: Privilégier l’embargo sur les armes contre un État agresseur, plutôt que des sanctions économiques qui frappent d’abord les populations civiles.
+          en: Favour arms embargoes against an aggressor state over economic sanctions that hit civilians first.
+      - numero: 8
+        titre: { fr: Une institution mondiale pour le climat, en: A world institution for the climate }
+        texte:
+          fr: Fonder une institution mondiale et permanente pour l’environnement et le climat, inspirée des COP mais dotée de moyens contraignants.
+          en: Create a permanent world institution for the environment and the climate, modelled on the COPs but with binding powers.
+
+  - nom: { fr: Troisième temps, en: Third stage }
+    horizon: { fr: Long terme, en: Long term }
+    resume:
+      fr: "Nos propositions phares : elles demandent une révision de la Charte."
+      en: "Our flagship proposals: they require a review of the Charter."
+    propositions:
+      - numero: 9
+        titre: { fr: Secrétaire général et Assemblée générale, en: Secretary-General and General Assembly }
+        texte:
+          fr: Permettre au Secrétaire général de faire adopter par l’Assemblée générale, à la majorité des deux tiers, une résolution surmontant un blocage du Conseil de sécurité sur les questions du Chapitre VII.
+          en: Allow the Secretary-General to have the General Assembly adopt, by a two-thirds majority, a resolution overcoming a Security Council deadlock on Chapter VII matters.
+      - numero: 10
+        titre: { fr: Un Conseil de sécurité représentatif, en: A representative Security Council }
+        texte:
+          fr: "Revoir la composition des membres permanents pour refléter les blocs régionaux réels, en intégrant le Sud global : Afrique, Amérique latine, Asie, pays arabes."
+          en: "Reform permanent membership to reflect real regional blocs, bringing in the Global South: Africa, Latin America, Asia and the Arab states."
+      - numero: 11
+        titre: { fr: Suspendre le droit de veto, en: Suspend the veto }
+        texte:
+          fr: Suspendre le veto d’un membre permanent qui commet des atrocités de masse ou une agression, en élargissant l’article 27-3 de la Charte. Une initiative franco-mexicaine, soutenue par une centaine d’États, va déjà dans ce sens.
+          en: Suspend the veto of a permanent member that commits mass atrocities or aggression, by extending Article 27(3) of the Charter. A French-Mexican initiative backed by around a hundred states already points this way.

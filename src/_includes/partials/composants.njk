@@ -1,0 +1,66 @@
+{#- Petits composants réutilisés sur plusieurs pages. -#}
+
+{#- Carte d'aperçu d'un article du blog -#}
+{% macro carteArticle(article, lang, site) %}
+<li>
+  <a class="post" href="{{ article.url }}">
+    {%- if article.data.image %}
+    <img src="{{ article.data.image }}" alt="" loading="lazy" width="640" height="336">
+    {%- endif %}
+    <div class="post-body">
+      <p class="post-meta">
+        <time datetime="{{ article.date | dateIso }}">{{ article.date | dateLongue(lang) }}</time>
+        {%- if lang != article.data.lang %}<span class="post-lang">{{ site.ui.enFrancais | t(lang) }}</span>{% endif %}
+      </p>
+      <h3 lang="{{ article.data.lang }}">{{ article.data.titre }}</h3>
+      <p lang="{{ article.data.lang }}">{{ article.data.resume }}</p>
+      <span class="post-cta">{{ site.ui.lireSuite | t(lang) }}</span>
+    </div>
+  </a>
+</li>
+{% endmacro %}
+
+{#- Tableau des propositions (frise) -#}
+{% macro tableauPropositions(P, lang) %}
+<div class="table-wrap">
+  <table class="frise-table">
+    <thead>
+      <tr>
+        <th scope="col" class="col-n">{{ P.colonnes.numero | t(lang) }}</th>
+        <th scope="col" class="col-title">{{ P.colonnes.proposition | t(lang) }}</th>
+        <th scope="col">{{ P.colonnes.contenu | t(lang) }}</th>
+      </tr>
+    </thead>
+    {%- for temps in P.temps %}
+    <tbody class="phase phase-{{ loop.index }}">
+      <tr class="phase-row">
+        <th colspan="3" scope="rowgroup">
+          <div class="phase-label">
+            <strong>{{ temps.nom | t(lang) }}</strong>
+            <span class="horizon">{{ temps.horizon | t(lang) }}</span>
+            <span class="why">{{ temps.resume | t(lang) }}</span>
+          </div>
+        </th>
+      </tr>
+      {%- for p in temps.propositions %}
+      <tr class="prop-row" id="proposition-{{ p.numero }}">
+        <td class="n">{{ p.numero }}</td>
+        <th scope="row">{{ p.titre | t(lang) }}</th>
+        <td class="text">{{ p.texte | t(lang) }}</td>
+      </tr>
+      {%- endfor %}
+    </tbody>
+    {%- endfor %}
+  </table>
+</div>
+{% endmacro %}
+
+{#- En-tête des pages intérieures -#}
+{% macro enteteDePage(titre, intro) %}
+<div class="page-head">
+  <div class="wrap">
+    <h1>{{ titre }}</h1>
+    {%- if intro %}<p class="page-intro">{{ intro }}</p>{% endif %}
+  </div>
+</div>
+{% endmacro %}

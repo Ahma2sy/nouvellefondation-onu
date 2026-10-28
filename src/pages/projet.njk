@@ -1,0 +1,48 @@
+---
+pagination: { data: site.langs, size: 1, alias: lang }
+cle: projet
+layout: base.njk
+permalink: "{{ site.pages.projet.url[lang] }}"
+---
+{%- import "partials/composants.njk" as c -%}
+{%- set P = projet -%}
+{{ c.enteteDePage(P.titre | t(lang), P.intro | t(lang)) }}
+<section class="section first">
+  <div class="wrap projet-grid">
+    <div class="prose">
+      {%- for p in P.paragraphes %}
+      <p>{{ p | t(lang) }}</p>
+      {%- endfor %}
+    </div>
+    <figure class="projet-photo">
+      <img src="{{ P.photo.image }}" alt="{{ P.photo.alt | t(lang) }}" width="1400" height="927" loading="lazy">
+      <figcaption>{{ P.photo.legende | t(lang) }}</figcaption>
+    </figure>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap people-grid">
+    <div>
+      <h2>{{ P.bureauTitre | t(lang) }}</h2>
+      <ul class="people">
+        {%- for m in P.bureau %}
+        <li><strong>{{ m.nom }}</strong><span>{{ m.role | t(lang) }}</span></li>
+        {%- endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2>{{ P.personnalitesTitre | t(lang) }}</h2>
+      <ul class="people">
+        {%- for m in P.personnalites %}
+        <li><strong>{{ m.nom }}</strong><span>{{ m.role | t(lang) }}</span></li>
+        {%- endfor %}
+      </ul>
+      <h2 class="spaced">{{ P.documentsTitre | t(lang) }}</h2>
+      <ul class="doc-list">
+        {%- for d in P.documents %}
+        <li><a href="{{ d.url }}" target="_blank" rel="noopener">{{ d.titre | t(lang) }}{% if d.pdf %}<span class="tag">{{ site.ui.pdf | t(lang) }}</span>{% endif %}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
