@@ -8,6 +8,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addDataExtension("yml,yaml", (contents) => yaml.load(contents));
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
+  // Numéro de version ajouté aux fichiers CSS et JS : les navigateurs rechargent
+  // le style à chaque publication au lieu de garder l'ancien en mémoire.
+  eleventyConfig.addGlobalData("version", () => Date.now().toString(36));
+
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/medias": "medias" });
   eleventyConfig.addPassthroughCopy({ "src/favicon.ico": "favicon.ico" });

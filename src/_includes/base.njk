@@ -39,7 +39,7 @@
   <meta name="theme-color" content="#15233d">
   <link rel="preload" href="/assets/fonts/spectral-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{ version }}">
   {%- if cle == "accueil" and site.url %}
   {#- Nom du site affiché par Google au-dessus des résultats -#}
   <script type="application/ld+json">
@@ -92,6 +92,6 @@
     {{ content | safe }}
   </main>
   {% include "partials/pied.njk" %}
-  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js?v={{ version }}" defer></script>
 </body>
 </html>
