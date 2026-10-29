@@ -37,7 +37,7 @@ permalink: "{{ site.pages.accueil.url[lang] }}"
   <div class="wrap">
     <div class="section-head">
       <h2>{{ A.frise.titre | t(lang) }}</h2>
-      <p class="section-intro">{{ A.frise.texte | t(lang) }}</p>
+      <p class="section-intro">{{ A.frise.texte | t(lang) | italique | safe }}</p>
     </div>
     <ol class="temps-grid">
       {%- for temps in propositions.temps %}

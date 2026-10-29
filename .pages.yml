@@ -139,6 +139,12 @@ content:
             fields:
               - { name: label, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
               - { name: url, type: string }
+          - name: pdfEs
+            label: PDF de la frise en espagnol
+            type: object
+            fields:
+              - { name: label, type: object, fields: [{ name: fr, type: string }, { name: en, type: string }, { name: es, type: string }] }
+              - { name: url, type: string }
           - { name: conclusion, label: Conclusion, type: object, fields: [{ name: fr, type: text }, { name: en, type: text }, { name: es, type: text }] }
           - name: temps
             label: Les trois temps

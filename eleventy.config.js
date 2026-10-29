@@ -35,6 +35,12 @@ export default function (eleventyConfig) {
     const d = value instanceof Date ? value : new Date(value);
     return d.toISOString().slice(0, 10);
   });
+  // {{ texte | italique | safe }} : les mots entre *astérisques* s'affichent en italique.
+  eleventyConfig.addFilter("italique", (value) =>
+    String(value ?? "")
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/\*([^*]+)\*/g, "<em>$1</em>")
+  );
   eleventyConfig.addFilter("head", (list, n) => (list || []).slice(0, n));
   eleventyConfig.addFilter("hote", (url) => new URL(url).hostname.replace(/^www\./, ""));
   eleventyConfig.addFilter("trierParDate", (list) =>

@@ -15,6 +15,9 @@ permalink: "{{ site.pages.propositions.url[lang] }}"
       <span>{{ P.telechargements | t(lang) }}</span>
       <a href="{{ P.pdfFr.url }}" target="_blank" rel="noopener">{{ P.pdfFr.label | t(lang) }}</a>
       <a href="{{ P.pdfEn.url }}" target="_blank" rel="noopener">{{ P.pdfEn.label | t(lang) }}</a>
+      {%- if P.pdfEs %}
+      <a href="{{ P.pdfEs.url }}" target="_blank" rel="noopener">{{ P.pdfEs.label | t(lang) }}</a>
+      {%- endif %}
     </div>
   </div>
 </section>

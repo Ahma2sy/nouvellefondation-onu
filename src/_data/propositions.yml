@@ -5,9 +5,9 @@ titre:
   en: Eleven proposals, three stages
   es: Once propuestas, tres tiempos
 intro:
-  fr: 'Un catalogue de propositions ne dit rien de leur faisabilité. Nous avons donc classé les nôtres selon ce qu’elles exigent du droit existant : certaines s’appuient sur des institutions déjà en place, d’autres se heurtent à des intérêts d’États, les dernières supposent d’amender la Charte, ce qui requiert une majorité des deux tiers à l’Assemblée générale et l’accord des cinq membres permanents du Conseil de sécurité.'
-  en: 'A list of proposals says nothing about whether they can happen. So we have ordered ours by what they require of existing law: some build on institutions already in place, others run up against state interests, and the last ones require amending the Charter, which needs a two-thirds majority in the General Assembly and the agreement of the five permanent members of the Security Council.'
-  es: 'Un catálogo de propuestas no dice nada sobre su viabilidad. Por eso hemos ordenado las nuestras según lo que exigen del derecho vigente: algunas se apoyan en instituciones ya existentes, otras chocan con intereses de los Estados y las últimas requieren enmendar la Carta, lo que exige una mayoría de dos tercios en la Asamblea General y el acuerdo de los cinco miembros permanentes del Consejo de Seguridad.'
+  fr: 'Un catalogue de propositions ne dit rien de leur faisabilité. Notre *frise prospective chronologique* classe donc les nôtres selon ce qu’elles exigent du droit existant : certaines s’appuient sur des institutions déjà en place, d’autres se heurtent à des intérêts d’États, les dernières supposent d’amender la Charte, ce qui requiert une majorité des deux tiers à l’Assemblée générale et l’accord des cinq membres permanents du Conseil de sécurité.'
+  en: 'A list of proposals says nothing about whether they can happen. Our *prospective chronological timeline* therefore orders ours by what they require of existing law: some build on institutions already in place, others run up against state interests, and the last ones require amending the Charter, which needs a two-thirds majority in the General Assembly and the agreement of the five permanent members of the Security Council.'
+  es: 'Un catálogo de propuestas no dice nada sobre su viabilidad. Por eso nuestra *cronología prospectiva* las ordena según lo que exigen del derecho vigente: algunas se apoyan en instituciones ya existentes, otras chocan con intereses de los Estados y las últimas requieren enmendar la Carta, lo que exige una mayoría de dos tercios en la Asamblea General y el acuerdo de los cinco miembros permanentes del Consejo de Seguridad.'
 colonnes:
   numero:
     fr: N°
@@ -37,6 +37,12 @@ pdfEn:
     en: English version (PDF)
     es: Versión inglesa (PDF)
   url: https://www.signesdestemps.me/wp-content/uploads/2026/05/PROSPECTIVE-CHRONOLOGICAL-TIMELINE.pdf
+pdfEs:
+  label:
+    fr: Version espagnole (PDF)
+    en: Spanish version (PDF)
+    es: Versión española (PDF)
+  url: /medias/cronologia-prospectiva-es.pdf
 conclusion:
   fr: Les trois dernières propositions se heurteront au veto de ceux qu’elles visent. Nous les portons quand même, parce qu’un objectif qu’on renonce à formuler n’a aucune chance d’être atteint.
   en: The last three proposals will run into the veto of those they target. We put them forward anyway, because a goal that is never stated has no chance of being reached.

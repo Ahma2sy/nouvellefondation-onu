@@ -9,9 +9,9 @@ intro:
   en: A coalition of NGOs and international lawyers calling for a reform of the UN Charter.
   es: Una coalición de ONG y juristas de derecho internacional que pide reformar la Carta de las Naciones Unidas.
 paragraphes:
-- fr: Le projet Nouvelle Fondation est né des ateliers Chemins de Paix du Centre catholique international de coopération avec l’UNESCO (CCIC), à l’initiative de Pax Christi International. Il est accueilli par Pax Christi France, qui propose de travailler un texte appelant à la réforme de la Charte de l’ONU et des institutions internationales.
-  en: The New Foundation project grew out of the Paths of Peace workshops of the International Catholic Centre for Cooperation with UNESCO (CCIC), on the initiative of Pax Christi International. It is hosted by Pax Christi France, which set out to draft a text calling for reform of the UN Charter and international institutions.
-  es: El proyecto Nueva Fundación nació de los talleres Caminos de Paz del Centro Católico Internacional de Cooperación con la UNESCO (CCIC), por iniciativa de Pax Christi Internacional. Está acogido por Pax Christi Francia, que propuso elaborar un texto que llama a reformar la Carta de la ONU y las instituciones internacionales.
+- fr: Le projet Nouvelle Fondation est né des ateliers Chemins de Paix du Centre catholique international de coopération avec l’UNESCO (CCIC), à l’initiative de Ghislain Le Ray, de Pax Christi International. Il est accueilli par Pax Christi France, qui propose de travailler un texte appelant à la réforme de la Charte de l’ONU et des institutions internationales.
+  en: The New Foundation project grew out of the Paths of Peace workshops of the International Catholic Centre for Cooperation with UNESCO (CCIC), on the initiative of Ghislain Le Ray of Pax Christi International. It is hosted by Pax Christi France, which set out to draft a text calling for reform of the UN Charter and international institutions.
+  es: El proyecto Nueva Fundación nació de los talleres Caminos de Paz del Centro Católico Internacional de Cooperación con la UNESCO (CCIC), por iniciativa de Ghislain Le Ray, de Pax Christi Internacional. Está acogido por Pax Christi Francia, que propuso elaborar un texto que llama a reformar la Carta de la ONU y las instituciones internacionales.
 - fr: 'Sa méthode est celle d’ICAN, la campagne internationale pour l’abolition des armes nucléaires, prix Nobel de la paix 2017 : faire circuler un texte, rassembler le plus grand nombre de signatures d’organisations, puis le porter dans les médias et auprès des cercles politiques nationaux et multilatéraux.'
   en: 'Its method is that of ICAN, the International Campaign to Abolish Nuclear Weapons, winner of the 2017 Nobel Peace Prize: circulate a text, gather as many organisational signatures as possible, then take it to the media and to national and multilateral policy circles.'
   es: 'Su método es el de ICAN, la Campaña Internacional para Abolir las Armas Nucleares, premio Nobel de la Paz 2017: hacer circular un texto, reunir el mayor número posible de firmas de organizaciones y luego llevarlo a los medios y a los círculos políticos nacionales y multilaterales.'
@@ -78,6 +78,11 @@ bureau:
     fr: Consultante, chargée d’enseignement en droit international
     en: Consultant and lecturer in international law
     es: Consultora y profesora de derecho internacional
+- nom: Ahmad Al Mouhamad
+  role:
+    fr: Étudiant en droit à l’Université de Rennes
+    en: Law student at the University of Rennes
+    es: Estudiante de Derecho en la Universidad de Rennes
 personnalitesTitre:
   fr: Personnalités qui soutiennent le projet
   en: Public figures supporting the project
