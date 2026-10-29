@@ -5,7 +5,7 @@ document.querySelectorAll("[data-copy]").forEach(function (btn) {
     var text = btn.getAttribute("data-copy");
     var done = function () { if (status) status.textContent = btn.getAttribute("data-done"); };
     var fallback = function () {
-      var email = document.getElementById("email");
+      var email = btn.parentNode.querySelector(".email");
       if (!email) return;
       var range = document.createRange();
       range.selectNodeContents(email);

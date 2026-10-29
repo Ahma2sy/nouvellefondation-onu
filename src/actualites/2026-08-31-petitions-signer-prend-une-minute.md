@@ -18,7 +18,7 @@ Le poids d’une signature d’organisation n’est pas celui d’une signature 
 
 ## Rejoindre le groupe de travail
 
-Si votre ONG souhaite rejoindre le groupe qui porte le projet, ou figurer parmi les organisations soutenant les propositions, écrivez à ghislainleray.paxchristi@gmail.com.
+Si votre ONG souhaite rejoindre le groupe qui porte le projet, ou figurer parmi les organisations soutenant les propositions, écrivez à ghislainleray.paxchristi@gmail.com ou à projetnouvellefondation@gmail.com.
 
 Nous recherchons en particulier des organisations et des experts établis à Paris, New York, Genève et Vienne, là où se jouent les discussions qui nous intéressent.
 

@@ -24,9 +24,11 @@ permalink: "{{ site.pages.agir.url[lang] }}"
   <div class="wrap narrow contact">
     <h2>{{ A.rejoindre.titre | t(lang) }}</h2>
     <p>{{ A.rejoindre.texte | t(lang) }}</p>
-    <p class="contact-line"><strong class="email" id="email">{{ site.email }}</strong>
-      <button type="button" class="copy-btn" data-copy="{{ site.email }}" data-done="{{ site.ui.copie | t(lang) }}">{{ site.ui.copier | t(lang) }}</button>
+    {%- for adresse in [site.email, site.emailBureau] %}
+    <p class="contact-line"><strong class="email"{% if loop.first %} id="email"{% endif %}>{{ adresse }}</strong>
+      <button type="button" class="copy-btn" data-copy="{{ adresse }}" data-done="{{ site.ui.copie | t(lang) }}">{{ site.ui.copier | t(lang) }}</button>
       <span class="copy-status" role="status"></span>
     </p>
+    {%- endfor %}
   </div>
 </section>
