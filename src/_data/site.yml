@@ -2,7 +2,7 @@
 # url : adresse définitive du site, sans barre finale (ex. https://www.nouvellefondation-onu.org).
 # À remplir dès que le nom de domaine est branché : active le plan du site et les balises Google.
 
-url: ''
+url: https://projet-nouvellefondation.org
 nom:
   fr: Projet Nouvelle Fondation des institutions internationales
   en: New Foundation of International Institutions Project
