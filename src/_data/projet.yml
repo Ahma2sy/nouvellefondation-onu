@@ -35,9 +35,9 @@ bureauTitre:
 bureau:
 - nom: Ghislain Le Ray
   role:
-    fr: Président de la commission Nouvelle Fondation de Pax Christi France
-    en: Chair of the New Foundation commission of Pax Christi France
-    es: Presidente de la comisión Nueva Fundación de Pax Christi Francia
+    fr: "Président commission Nouvelle Fondation\nPax Christi France"
+    en: "Chair, New Foundation commission\nPax Christi France"
+    es: "Presidente de la comisión Nueva Fundación\nPax Christi Francia"
 - nom: Hervé Dory
   role:
     fr: Vice-président de Pax Christi France
@@ -45,9 +45,9 @@ bureau:
     es: Vicepresidente de Pax Christi Francia
 - nom: Alfonso Zardi
   role:
-    fr: Président de Chrétiens de la Méditerranée, représentant de Pax Christi International au Conseil de l’Europe
-    en: President of Chrétiens de la Méditerranée, Pax Christi International representative to the Council of Europe
-    es: Presidente de Chrétiens de la Méditerranée, representante de Pax Christi Internacional ante el Consejo de Europa
+    fr: "Président de Chrétiens de la Méditerranée\nReprésentant de Pax Christi International au Conseil de l’Europe"
+    en: "President of Chrétiens de la Méditerranée\nPax Christi International representative to the Council of Europe"
+    es: "Presidente de Chrétiens de la Méditerranée\nRepresentante de Pax Christi Internacional ante el Consejo de Europa"
 - nom: Vlatko Maric
   role:
     fr: Pax Christi France
@@ -55,24 +55,24 @@ bureau:
     es: Pax Christi Francia
 - nom: Marilyn Pacouret
   role:
-    fr: Présidente de la Plateforme des ONG françaises pour la Palestine, membre du Conseil national de Pax Christi France
-    en: President of the Platform of French NGOs for Palestine; Member of the National Council of Pax Christi France
-    es: Presidenta de la Plataforma de ONG francesas por Palestina, miembro del Consejo Nacional de Pax Christi Francia
+    fr: "Présidente de la Plateforme des ONG françaises pour la Palestine\nMembre du Conseil national de Pax Christi France"
+    en: "President of the Platform of French NGOs for Palestine\nMember of the National Council of Pax Christi France"
+    es: "Presidenta de la Plataforma de ONG francesas por Palestina\nMiembro del Consejo Nacional de Pax Christi Francia"
 - nom: Alain Rouy
   role:
-    fr: Secrétaire national du Mouvement de la Paix, vice-président du Bureau international de la paix (IPB)
-    en: National Secretary, Mouvement de la Paix; Vice-President, International Peace Bureau (IPB)
-    es: Secretario nacional del Mouvement de la Paix, vicepresidente de la Oficina Internacional de la Paz (IPB)
+    fr: "Secrétaire national du Mouvement de la Paix\nVice-président du Bureau international de la paix (IPB)"
+    en: "National Secretary, Mouvement de la Paix\nVice-President, International Peace Bureau (IPB)"
+    es: "Secretario nacional del Mouvement de la Paix\nVicepresidente de la Oficina Internacional de la Paz (IPB)"
 - nom: Marc Deluzet
   role:
-    fr: Président du MIAMSI, membre du CCIC/UNESCO
-    en: President of MIAMSI, member of CCIC/UNESCO
-    es: Presidente del MIAMSI, miembro del CCIC/UNESCO
+    fr: "Président du MIAMSI\nMembre du CCIC/UNESCO"
+    en: "President of MIAMSI\nMember of CCIC/UNESCO"
+    es: "Presidente del MIAMSI\nMiembro del CCIC/UNESCO"
 - nom: Didier Coulomb
   role:
-    fr: Membre du CCIC/UNESCO, directeur général honoraire de l’Institut international du froid (IIF)
-    en: Member of CCIC/UNESCO; Honorary Director General of the International Institute of Refrigeration (IIR)
-    es: Miembro del CCIC/UNESCO, director general honorario del Instituto Internacional del Frío (IIF)
+    fr: "Directeur général honoraire de l’Institut International du Froid (IIF)\nMembre du CCIC/UNESCO"
+    en: "Honorary Director General of the International Institute of Refrigeration (IIR)\nMember of CCIC/UNESCO"
+    es: "Director general honorario del Instituto Internacional del Frío (IIF)\nMiembro del CCIC/UNESCO"
 - nom: Farah Sakr
   role:
     fr: Consultante, chargée d’enseignement en droit international
@@ -105,9 +105,9 @@ personnalites:
     es: Diputado europeo
 - nom: Christian Connan
   role:
-    fr: Ancien ambassadeur
-    en: Former Ambassador
-    es: Exembajador
+    fr: "Ancien Ambassadeur"
+    en: "Former Ambassador"
+    es: "Exembajador"
 documentsTitre:
   fr: Documents de référence
   en: Key documents
