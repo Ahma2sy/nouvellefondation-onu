@@ -35,9 +35,9 @@ bureauTitre:
 bureau:
 - nom: Ghislain Le Ray
   role:
-    fr: Président de la commission Nouvelle Fondation
-    en: Chair of the New Foundation commission
-    es: Presidente de la comisión Nueva Fundación
+    fr: Président de la commission Nouvelle Fondation de Pax Christi France
+    en: Chair of the New Foundation commission of Pax Christi France
+    es: Presidente de la comisión Nueva Fundación de Pax Christi Francia
 - nom: Hervé Dory
   role:
     fr: Vice-président de Pax Christi France
@@ -60,9 +60,9 @@ bureau:
     es: Presidenta de la Plataforma de ONG francesas por Palestina, miembro del Consejo Nacional de Pax Christi Francia
 - nom: Alain Rouy
   role:
-    fr: Secrétaire national du Mouvement de la Paix, vice-président du Bureau international de la paix
-    en: National Secretary, Mouvement de la Paix; Vice-President, International Peace Bureau
-    es: Secretario nacional del Mouvement de la Paix, vicepresidente de la Oficina Internacional de la Paz
+    fr: Secrétaire national du Mouvement de la Paix, vice-président du Bureau international de la paix (IPB)
+    en: National Secretary, Mouvement de la Paix; Vice-President, International Peace Bureau (IPB)
+    es: Secretario nacional del Mouvement de la Paix, vicepresidente de la Oficina Internacional de la Paz (IPB)
 - nom: Marc Deluzet
   role:
     fr: Président du MIAMSI, membre du CCIC/UNESCO
