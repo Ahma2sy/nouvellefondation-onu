@@ -306,6 +306,9 @@ p { margin: 0; }
 @media (max-width: 800px) { .footer-grid { grid-template-columns: 1fr; } }
 
 /* Page Le projet : logo sous la photo, encouragement moral */
+.prose .porteur { display: grid; gap: .35rem; margin: 0 0 1.75rem; padding: 1.1rem 1.3rem; border-left: 4px solid var(--olive); background: color-mix(in srgb, var(--olive) 8%, transparent); border-radius: 0 6px 6px 0; }
+.prose .porteur strong { font-size: 1.15rem; font-weight: 700; line-height: 1.35; }
+.prose .porteur a { font-weight: 600; justify-self: start; }
 .logo-projet { margin-top: 2rem; background: var(--logo-bg); border: 1px solid var(--rule); border-radius: 6px; padding: clamp(1.5rem, 4vw, 2.5rem); display: grid; place-items: center; }
 .logo-projet img { width: 100%; max-width: 30rem; }
 .encouragement { margin-top: 2.5rem; padding: 1.25rem 1.4rem; border-left: 4px solid var(--olive); background: color-mix(in srgb, var(--olive) 8%, transparent); border-radius: 0 6px 6px 0; }
