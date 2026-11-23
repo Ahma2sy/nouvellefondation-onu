@@ -19,9 +19,9 @@ porteur:
     es: Visitar el sitio de Pax Christi Francia
   url: https://www.paxchristi.fr/
 paragraphes:
-- fr: Le projet Nouvelle Fondation est né des ateliers Chemins de Paix du Centre catholique international de coopération avec l’UNESCO (CCIC), à l’initiative de Ghislain Le Ray, de Pax Christi International. Il est porté par Pax Christi France, qui propose de travailler un texte appelant à la réforme de la Charte de l’ONU et des institutions internationales.
-  en: The New Foundation project grew out of the Paths of Peace workshops of the International Catholic Centre for Cooperation with UNESCO (CCIC), on the initiative of Ghislain Le Ray of Pax Christi International. It is led by Pax Christi France, which set out to draft a text calling for reform of the UN Charter and international institutions.
-  es: El proyecto Nueva Fundación nació de los talleres Caminos de Paz del Centro Católico Internacional de Cooperación con la UNESCO (CCIC), por iniciativa de Ghislain Le Ray, de Pax Christi Internacional. Está impulsado por Pax Christi Francia, que propuso elaborar un texto que llama a reformar la Carta de la ONU y las instituciones internacionales.
+- fr: Le projet Nouvelle Fondation est né des ateliers Chemins de Paix du Centre catholique international de coopération avec l’UNESCO (CCIC), à l’initiative de Ghislain Le Ray, alors représentant de Pax Christi International. Il est porté par Pax Christi France, qui propose de travailler un texte appelant à la réforme de la Charte de l’ONU et des institutions internationales.
+  en: The New Foundation project grew out of the Paths of Peace workshops of the International Catholic Centre for Cooperation with UNESCO (CCIC), on the initiative of Ghislain Le Ray, then representative of Pax Christi International. It is led by Pax Christi France, which set out to draft a text calling for reform of the UN Charter and international institutions.
+  es: El proyecto Nueva Fundación nació de los talleres Caminos de Paz del Centro Católico Internacional de Cooperación con la UNESCO (CCIC), por iniciativa de Ghislain Le Ray, entonces representante de Pax Christi Internacional. Está impulsado por Pax Christi Francia, que propuso elaborar un texto que llama a reformar la Carta de la ONU y las instituciones internacionales.
 - fr: 'Sa méthode est celle d’ICAN, la campagne internationale pour l’abolition des armes nucléaires, prix Nobel de la paix 2017 : faire circuler un texte, rassembler le plus grand nombre de signatures d’organisations, puis le porter dans les médias et auprès des cercles politiques nationaux et multilatéraux.'
   en: 'Its method is that of ICAN, the International Campaign to Abolish Nuclear Weapons, winner of the 2017 Nobel Peace Prize: circulate a text, gather as many organisational signatures as possible, then take it to the media and to national and multilateral policy circles.'
   es: 'Su método es el de ICAN, la Campaña Internacional para Abolir las Armas Nucleares, premio Nobel de la Paz 2017: hacer circular un texto, reunir el mayor número posible de firmas de organizaciones y luego llevarlo a los medios y a los círculos políticos nacionales y multilaterales.'
@@ -44,16 +44,21 @@ bureauTitre:
   es: La Mesa
 bureau:
 - nom: Ghislain Le Ray
+  organisation:
+    texte:
+      fr: Pax Christi France
+      en: Pax Christi France
+      es: Pax Christi Francia
+    url: https://www.paxchristi.fr/
   role:
-    fr: "Président commission Nouvelle Fondation\nPax Christi France"
-    en: "Chair, New Foundation commission\nPax Christi France"
-    es: "Presidente de la comisión Nueva Fundación\nPax Christi Francia"
+    fr: Président commission Nouvelle Fondation
+    en: Chair, New Foundation commission
+    es: Presidente de la comisión Nueva Fundación
 - nom: Hervé Dory
   role:
     fr: Vice-président de Pax Christi France
     en: Vice-President, Pax Christi France
     es: Vicepresidente de Pax Christi Francia
-  lien: https://www.paxchristi.fr/
 - nom: Alfonso Zardi
   role:
     fr: "Président de Chrétiens de la Méditerranée\nReprésentant de Pax Christi International au Conseil de l’Europe"

@@ -35,7 +35,7 @@ permalink: "{{ site.pages.projet.url[lang] }}"
       <h2>{{ P.bureauTitre | t(lang) }}</h2>
       <ul class="people">
         {%- for m in P.bureau %}
-        <li><strong>{{ m.nom }}</strong><span>{% if m.lien %}<a href="{{ m.lien }}" target="_blank" rel="noopener">{{ m.role | t(lang) }}</a>{% else %}{{ m.role | t(lang) }}{% endif %}</span></li>
+        <li><strong>{{ m.nom }}</strong><span>{% if m.organisation %}<a href="{{ m.organisation.url }}" target="_blank" rel="noopener">{{ m.organisation.texte | t(lang) }}</a><br>{% endif %}{{ m.role | t(lang) }}</span></li>
         {%- endfor %}
       </ul>
     </div>
