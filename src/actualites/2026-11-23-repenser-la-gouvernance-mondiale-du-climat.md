@@ -1,6 +1,7 @@
 ---
 titre: Repenser la gouvernance mondiale du climat
 date: 2026-11-23
+linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7531782414147170304/
 resume: "Le cadre des COP, fondé sur le consensus, est-il à la hauteur du dérèglement climatique ? Notre Proposition 8 plaide pour une institution mondiale permanente pour l’environnement et le climat."
 ---
 Les COP ont permis d’inscrire le climat à l’agenda mondial. Mais à mesure que les effets du dérèglement climatique s’aggravent, une question s’impose : le cadre actuel, fondé sur le consensus, est-il efficace face à ce que la situation exige ?
